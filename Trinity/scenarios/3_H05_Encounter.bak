@@ -1,0 +1,1031 @@
+#textdomain wesnoth-Trinity
+
+# a story scenario
+[scenario]
+	id="3_H05"
+	name= _ "An Encounter"
+	map_data="{~add-ons/Trinity/maps/3_H05pre.map}"
+	next_scenario=3_H05b
+	victory_when_enemies_defeated=no
+	{TURNS 40 35 30}
+
+	[music]
+	name="nunc_dimittis.ogg"
+	[/music]
+
+#	{BMR_STORE_SIDE 1}
+#	{BMR_RESTORE_SIDE 1}
+	{FIRST_WATCH}
+
+[story]
+    [part]
+        story= _ "As Haldrad's party headed back toward Weldyn, Dolevan's mind was racing.  He had been in periodic contact with his brother Malevan for years, but he had not heard from him for over a year and a half.  Malevan had been studying some powerful ancient culture, and had been trying to extract some of the lost knowledge and power.  Because of the orc's words, Dolevan felt the red-eyed stranger was related to his brother's work."
+        background="misc/Trinity_swamp.png"
+    [/part]
+    [part]
+        story= _ "The group had just emerged from the foothills and were gazing across the plains towards Weldyn when they heard a rumble and saw a black plume of smoke emerge from the city.  Dolevan shrank back into the shadows, flipping though his papers to see if his brother's letters conatined anything relevant to the situation."
+        background="story/landscape-bridge.jpg"
+    [/part]
+    [part]
+        story= _ "Dardrus froze in place when he saw the smoke emanating from the city.  
+'I have seen this before...  What do you know of, uh, green-eyed traitors?'
+'What you are talking about?,' answered Prince Haldrad.  Dolevan skimmed the letters for something about green eyes: nothing.
+'The enemy is not strong, but is very devious.  They do not have bodies of their own, but they take control of vulnerable prey such as yourselves-'
+'You know all of this from a black puff of smoke?,' interrupted the prince.
+'No...  We fought against this enemy, it was a desperate battle to save the world - your people included.  We did not lose, but neither did we win.  The enemy is out there, and I've seen them responsible for such black plumes in the past.' " 
+        background="misc/Trinity_swamp.png"
+    [/part]
+    [part]
+        story= _ "Dolevan searched for some mention of battles or war in his brother's letters.  He found a speculation that humans had been enslaved by beings of great strength, and that the common enemy was the 'lower half'.  He didn't know what 'lower half' meant, he suspected it was a bad translation by his brother, but this information suggested that Dardrus was not to be trusted." 
+        background="misc/Trinity_swamp.png"
+    [/part]
+    [part]
+        story= _ "Prince Haldrad directed the group to head to Weldyn, in case they could provide assistance to the city defenders.  They had gone a couple of miles before Haldrad realized Dolevan and his undead minions were no longer with them.  He called out, but knew it was pointless for the Necromancer did not want to be with them..."
+        background="story/landscape-bridge.jpg"
+    [/part]
+[/story]
+
+
+	[event]
+	name=prestart
+		[objectives]
+		side=1
+			[objective]
+			condition=lose
+			description=_ "Time Runs Out"
+			[/objective]
+		[/objectives]
+	[item]
+        x=24
+        y=8
+        image="items/gohere.png"
+        [/item]
+	[store_unit]
+	    [filter]
+		id=Largosh Teora
+	    [/filter]
+	    variable=teora
+	    kill=yes
+	[/store_unit]
+	{GENERIC_UNIT 1 "Skeleton" 12 2}
+	{GENERIC_UNIT 1 "Skeleton Archer" 14 2}
+	[unit]
+	    id=Khthon1
+            profile=portraits/elves/transparent/ranger.png~CS(-190,-40,-40)
+	    type=Elvish Avenger
+	    gender=male
+	    side=2
+	    x,y=13,2
+	[/unit]
+	[unit]
+	    id=Khthon2
+	    type=Ophis-Magnum
+	    side=2
+	    x,y=14,10
+	[/unit]
+	[unit]
+	    id=Khthon3
+	    type=Elvish Scout
+	    side=2
+	    x,y=5,9
+	[/unit]
+{TRINITY_KHTHONIZED id=Khthon1}
+{TRINITY_KHTHONIZED id=Khthon3}
+	[store_unit]
+	    [filter]
+		id=Khthon1
+	    [/filter]
+		variable=khthon1
+		kill=yes
+	[/store_unit]
+	[store_unit]
+	    [filter]
+		id=Khthon2
+	    [/filter]
+		variable=khthon2
+		kill=yes
+	[/store_unit]
+	[store_unit]
+	    [filter]
+		id=Khthon3
+	    [/filter]
+		variable=khthon3
+		kill=yes
+	[/store_unit]	    
+	[/event]
+
+	[side]
+	type=Necromancer
+#	save_id=Royal
+	name="Dolevan"
+	id=Dolevan
+	side=1
+	canrecruit=yes
+	controller=human
+	fog=no
+	recruit=Peasant,Woodsman
+	{GOLD 150 125 100}
+	{INCOME 6 4 2}
+	team_name=Undead
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=2
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Khthon
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=3
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Humans
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=4
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Phantom
+	[/side]
+
+	[event]
+	name=start
+		[message]
+		speaker=Dolevan
+		message= _ "(I don't trust that stranger, but I don't know what to do and Malevan's letters are just confusing.  I'll shadow the Prince, see if - what's that?)"
+		[/message]
+	    [music]
+		name=frantic.ogg
+		append=no
+		immediate=yes
+	    [/music]
+		[move_unit_fake]
+		type=Cavalryman
+		x=16,10
+		y=9,6
+		side=3
+		[/move_unit_fake]
+		[unit]
+		type=Cavalryman
+		side=3
+		id=Human1
+		x,y=10,6
+		facing=ne
+		[/unit]
+		[message]
+		speaker=Human1
+		message= _ "Weldyn has fallen!  Run for your life, old man!"
+		[/message]
+		{MODIFY_UNIT id=Human1 facing sw}
+		{MOVE_UNIT id=Human1 6 8}
+		[unstore_unit]
+		    variable=khthon3
+		[/unstore_unit]
+		[scroll_to]
+		x,y=6,8
+		[/scroll_to]
+		[delay]
+		time=300
+		[/delay]
+		[message]
+		speaker=Human1
+		message= _ "Ghah!!"
+		[/message]
+		{MODIFY_UNIT id=Human1 facing se}
+		{MOVE_UNIT id=Human1 13 10}
+		[unstore_unit]
+		    variable=khthon2
+		[/unstore_unit]
+	{MODIFY_UNIT id=Khthon2 facing sw}
+		[scroll_to]
+		x,y=13,10
+		[/scroll_to]
+		[delay]
+		time=500
+		[/delay]
+        [animate_unit]
+            flag=attack
+            [filter]
+                id=Khthon2
+            [/filter]
+                [primary_attack]
+                    name=khthon_vector
+                [/primary_attack]
+            hits=yes
+        [/animate_unit]
+	{TRINITY_KHTHONIZED id=Human1}
+	[sound]
+	    name=slowed.wav
+	[/sound]
+	{FLOATING_TEXT id=Human1 0,100,200 "Posessed!"}
+		[message]
+		speaker=Human1
+		message= _ "Ooph!"
+		[/message]
+	[redraw][/redraw]
+		[delay]
+		time=400
+		[/delay]
+		[message]
+		speaker=Dolevan
+		message= _ "(What am I seeing?  What are those things?)"
+		[/message]
+		[delay]
+		time=400
+		[/delay]
+		[unstore_unit]
+		variable=khthon1
+		[/unstore_unit]
+	{MODIFY_UNIT id=Khthon1 facing s}
+		[message]
+		speaker=Khthon1
+		message= _ "Hisss!"
+		[/message]
+	{MODIFY_UNIT id=Dolevan facing n}
+        [animate_unit]
+            flag=attack
+            [filter]
+                id=Dolevan
+            [/filter]
+                [primary_attack]
+                    name=plague staff
+                [/primary_attack]
+            hits=yes
+        [/animate_unit]
+	{MODIFY_UNIT x,y=12,2 facing ne}
+        [animate_unit]
+            flag=attack
+            [filter]
+                x,y=12,2
+            [/filter]
+                [primary_attack]
+                    name=axe
+                [/primary_attack]
+            hits=yes
+        [/animate_unit]
+		[message]
+		speaker=Dolevan
+		message= _ "Join my undead, foul one!"
+		[/message]
+        [animate_unit]
+            flag=attack
+            [filter]
+                id=Dolevan
+            [/filter]
+                [primary_attack]
+                    name=plague staff
+                [/primary_attack]
+            hits=yes
+        [/animate_unit]
+	{FLASH_WHITE (
+		[kill]
+		id=Khthon1
+		[/kill]
+	)}
+	    [music]
+		name=dougkaufman-weight_of_revenge.ogg
+		append=no
+		immediate=yes
+	    [/music]
+		[message]
+		speaker=narrator
+		message= _ "The Khthon did not become an undead, but something else happened.  A cold wind blew, the stars disappeared..."
+		[/message]
+	{FADE_TO_BLACK}
+		[kill]
+		side=2
+		[/kill]
+		[kill]
+		side=3
+		[/kill]
+		[kill]
+		type=Skeleton
+		[/kill]
+		[kill]
+		type=Skeleton Archer
+		[/kill]		
+		[store_unit]
+		    [filter]
+			id=Dolevan
+		    [/filter]
+		    variable=dolevan
+		    kill=yes
+		[/store_unit]
+		[set_variable]
+		    name=dolevan.x
+		    value=8
+		[/set_variable]
+		[set_variable]
+		    name=dolevan.y
+		    value=8
+		[/set_variable]
+		[terrain]
+		x=0-17
+		y=0-15		
+		terrain=Syt
+		[/terrain]
+	    [redraw][/redraw]
+		[unstore_unit]
+		variable=dolevan
+		[/unstore_unit]
+		{CLEAR_VARIABLE dolevan}
+		[message]
+		speaker=Dolevan
+		message= _ "(Where is this?  This is not the land of the dead...)"
+		[/message]
+	    [unit]
+		id=Seth
+		name="Seth"
+		type=Seth
+		side=4
+		x,y=8,6
+	    [/unit]
+	{GENERIC_UNIT 4 "Tomb Protector" 7 6}
+	{GENERIC_UNIT 4 "Tomb Protector" 9 6}
+	{FADE_IN}
+		[message]
+		speaker=Seth
+		message= _ "We have been trapped in this vacant world for a long time, but you have shown us a way out.  The tear in the barrier will grow, until we are able to merge our two worlds."  
+		[/message]
+		[message]
+		speaker=Dolevan
+		message= _ "(Merge the worlds?)  Why are you telling me this?"
+		[/message]
+		[message]
+		speaker=Seth
+		message= _ "When I find the heart of our lower half, we will re-unite and the one will be whole." 
+		[/message]
+		[message]
+		speaker=Dolevan
+		message= _ "(The 'lower half' again, what does that mean?)  Who is 'the one'?"
+		[/message]
+		[message]
+		speaker=Seth
+		message= _ "It is a sign of my gratitude and mercy that you will never find out..."  
+		[/message]
+		[message]
+		speaker=Dolevan
+		message= _ "Aaahhh!!"
+		[/message]
+		[kill]
+		id=Dolevan
+		animate=yes
+		[/kill]
+		[endlevel]
+		{CONTINUE_NO_SAVE}
+		[/endlevel]
+	[/event]
+
+	[event]
+	name=time over
+		[message]
+		speaker=Dolevan
+		message= _ "This is taking forever. For what, I ask? For nothing! I am gone, don't try to follow me!"
+		[/message]
+		{FADE_TO_BLACK}
+		[message]
+		speaker=Haldrad
+		message= _ "Oh, great..."
+		[/message]
+		[endlevel]
+		result=defeat 
+		[/endlevel]
+	[/event]
+[/scenario]
+
+[scenario]
+	id="3_H05b"
+	name= _ "An Encounter."
+	map_data="{~add-ons/Trinity/maps/3_H05.map}"
+	next_scenario=3_K05
+	victory_when_enemies_defeated=no
+	{TURNS 40 35 30}
+
+	[music]
+	name="nunc_dimittis.ogg"
+	[/music]
+
+	{BMR_STORE_SIDE 1}
+	{BMR_RESTORE_SIDE 1}
+	{FIRST_WATCH}
+
+[story]
+    [part]
+        story= _ "The group continued on without Dolevan.  Prince Haldrad hoped the Necromancer would change his mind and rejoin them, but they had to move on toward Weldyn."
+        background="story/landscape-bridge.jpg"
+    [/part]
+    [part]
+        story= _ "As they approached the outer perimeter, Prince Haldrad's party saw the guard towers were manned by...  Elves?"
+        background="story/landscape-bridge.jpg"
+    [/part]
+[/story]
+
+
+	[event]
+	name=prestart
+		[objectives]
+		side=1
+			[objective]
+			condition=lose
+			description=_ "Defeat Elvish Guards"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Death of Haldrad"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Death of Dardrus"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Time Runs Out"
+			[/objective]
+		[/objectives]
+	[item]
+        x=17
+        y=42
+        image="items/gohere.png"
+        [/item]
+	{GENERIC_UNIT 2 "Elvish Fighter" 19 37}
+	{GUARDIAN}
+	{TRINITY_KHTHONIZED x,y=19,37}
+	{GENERIC_UNIT 2 "Elvish Archer" 15 36}
+	{GUARDIAN}
+	{TRINITY_KHTHONIZED x,y=15,36}
+	{GENERIC_UNIT 2 "Elvish Captain" 17 38}
+	[+unit]
+            profile=portraits/elves/transparent/captain.png~CS(-190,-40,-40)
+	[/unit]
+	{GUARDIAN}
+	{TRINITY_KHTHONIZED x,y=17,38}
+	{GENERIC_UNIT 2 "Elvish Hero" 15 40}
+	{GUARDIAN}
+	{TRINITY_KHTHONIZED x,y=15,40}
+	{GENERIC_UNIT 2 "Elvish Ranger" 19 40}
+	{GUARDIAN}
+	{TRINITY_KHTHONIZED x,y=19,40}
+	[kill]
+	id=Dolevan
+	[/kill]
+	[kill]
+	race=undead
+	[/kill]
+	{GENERIC_UNIT 3 "Yak" 1 9}
+	{GENERIC_UNIT 3 "Ophis" 1 20}
+	{GENERIC_UNIT 3 "Prokyon" 42 11}
+	{GENERIC_UNIT 3 "Pegusa" 42 1}
+	{GENERIC_UNIT 3 "Nightmare" 42 32}
+	{GENERIC_UNIT 3 "Katoblepon" 37 39}
+	[recall]
+	id=Dardrus
+	[/recall]
+	[/event]
+
+	[side]
+        type=Haldrad Fighter
+        save_id=Royal
+        id=Haldrad
+        side=1
+        canrecruit=yes
+        controller=human
+        fog=no
+        recruit=Peasant,Woodsman,Spearman,Bowman
+        {GOLD 150 125 100}
+        {INCOME 6 4 2}
+        team_name=Royal
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=2
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Khthon
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=3
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Khthon
+	[/side]
+
+	[side]
+	no_leader=yes
+	side=4
+	controller=ai
+	fog=no
+	[ai]
+	aggression=0.8
+	grouping=offensive
+	caution=1.5
+	[/ai]
+	team_name=Khthon
+	[/side]
+
+	[event]
+	name=start
+		[message]
+		speaker=Haldrad
+		message= _ "Elves manning the guard towers?  Is the battle going so badly that the Royal Guard must outsourced to Elves?"
+		[/message]
+		[scroll_to]
+		x,y=17,38
+		[/scroll_to]
+		[delay]
+		time=500
+		[/delay]
+		[message]
+		speaker=Dardrus
+		message= _ "There is something very wrong with them...  Remember when I asked about green-eyed traitors?  These are the ones I was refering to..."
+		[/message]
+		[message]
+		speaker=Haldrad
+		message= _ "(So you don't like Elves...)  Elf Captain!  Why do our woodland friends play the role of guardians?  What has happened to the Royal Guard?"
+		[/message]
+		[message]
+		x,y=17,38
+		message= _ "Khhrrrr...."
+		[/message]
+		[message]
+		speaker=Dardrus
+		message= _ "Those were once Elves, but they are no longer Elves.  They are the Enemy, set aside any hesitation for you are in great danger..."
+		[/message]
+		[message]
+		speaker=Haldrad
+		message= _ "Yes, 'khrrr' was not the response I expected.  Has Weldyn been lost?  Or is this a thin arm of the beseigers that we must break through?"
+		[/message]
+		[message]
+		speaker=Haldrad
+		message= _ "We will fight these monsters to probe their strength.  Proceed as far south as you can, but be prepared to retreat to the north."
+		[/message]
+	    [set_variable]
+		name=weldyn_here
+		value=0
+	    [/set_variable]
+	    [music]
+		name=battle.ogg
+		append=no
+		immediate=yes
+	    [/music]
+	[/event]
+
+	[event]
+	name=new turn
+	first_time_only=no
+	    [set_variable]
+		name=random_temp1
+		rand=1..6
+	    [/set_variable]
+	    [set_variable]
+		name=random_temp2
+		rand=1..6
+	    [/set_variable]
+	    [set_variable]
+		name=random_temp3
+		rand=1..6
+	    [/set_variable]
+	    [switch]
+		variable=random_temp1
+		[case]
+		    value=1
+		    {GENERIC_UNIT 2 "Elvish Archer" 16 42}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=16,42}
+		[/case]
+		[case]
+		    value=2
+		    {GENERIC_UNIT 2 "Elvish Fighter" 18 41}
+		    [+unit]
+		    experience=$random_temp2
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=18,41}
+		[/case]
+		[case]
+		    value=3
+		    {GENERIC_UNIT 2 "Elvish Ranger" 17 41}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=17,41}
+		[/case]
+		[case]
+		    value=4
+		    {GENERIC_UNIT 2 "Elvish Hero" 13 42}
+		    [+unit]
+		    experience=$random_temp2
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=13,42}
+		[/case]
+		[case]
+		    value=5
+		    {GENERIC_UNIT 2 "Elvish Scout" 21 41}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=21,41}
+		[/case]
+		[else]
+		    {GENERIC_UNIT 2 "Elvish Rider" 20 42}
+		    [+unit]
+		    experience=$random_temp2
+		    [/unit]
+			{TRINITY_KHTHONIZED x,y=20,42}
+		[/else]
+	    [/switch]
+	    [switch]
+		variable=random_temp2
+		[case]
+		    value=1
+		    {GENERIC_UNIT 3 "Horse" 2 2}
+		    [+unit]
+		    experience=$random_temp1
+		    [/unit]
+		[/case]
+		[case]
+		    value=2
+		    {GENERIC_UNIT 3 "Pegusa" 1 15}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+		[/case]
+		[case]
+		    value=3
+		    {GENERIC_UNIT 3 "Ram" 1 33}
+		    [+unit]
+		    experience=$random_temp1
+		    [/unit]
+		[/case]
+		[case]
+		    value=4
+		    {GENERIC_UNIT 3 "Katoblepon" 41 31}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+		[/case]
+		[case]
+		    value=5
+		    {GENERIC_UNIT 3 "Timber Wolf" 41 13}
+		    [+unit]
+		    experience=$random_temp1
+		    [/unit]
+		[/case]
+		[else]
+		    {GENERIC_UNIT 3 "Prokyon" 40 2}
+		    [+unit]
+		    experience=$random_temp3
+		    [/unit]
+		[/else]
+	    [/switch]
+		[if]
+		    [variable]
+			name=weldyn_here
+			equals=1
+		    [/variable]
+		    [then]
+		    [switch]
+			variable=random_temp3
+			[case]
+			    value=1
+			    {GENERIC_UNIT 4 "Spearman" 42 35}
+			    [+unit]
+			    experience=$random_temp2
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=42,35}
+			[/case]
+			[case]
+			    value=2
+			    {GENERIC_UNIT 4 "Bowman" 1 34}
+			    [+unit]
+			    experience=$random_temp1
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=1,34}
+			[/case]
+			[case]
+			    value=3
+			    {GENERIC_UNIT 4 "Horseman" 15 42}
+			    [+unit]
+			    experience=$random_temp2
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=15,42}
+			[/case]
+			[case]
+			    value=4
+			    {GENERIC_UNIT 4 "Swordsman" 32 39}
+			    [+unit]
+			    experience=$random_temp1
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=32,39}
+			[/case]
+			[case]
+			    value=5
+			    {GENERIC_UNIT 4 "Longbowman" 40 25}
+			    [+unit]
+			    experience=$random_temp2
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=40,25}
+			[/case]
+			[else]
+			    {GENERIC_UNIT 4 "Knight" 18 41}
+			    [+unit]
+			    experience=$random_temp1
+			    [/unit]
+			{TRINITY_KHTHONIZED x,y=18,41}
+			[/else]
+		    [/switch]
+		    [/then]
+		[/if]
+	{CLEAR_VARIABLE random_temp1}
+	{CLEAR_VARIABLE random_temp2}
+	{CLEAR_VARIABLE random_temp3}
+	[/event]
+
+	[event]
+	name=moveto
+	    [filter]
+		y=20-42
+		[and]
+		    id=Dardrus
+		    [or]
+			id=Haldrad
+		    [/or]
+		[/and]		
+	    [/filter]
+	    [set_variable]
+		name=fog_here
+	        value=1
+	    [/set_variable]
+	[/event]
+	
+
+	[event]
+	name=new turn
+	first_time_only=no
+	    [if]
+		[variable]
+		name=fog_here
+		numerical_equals=1
+		[/variable]
+		[then]
+	    [message]
+		speaker=Dardrus
+		message= _ "More fog..."
+	    [/message]
+	    [modify_side]
+		side=1
+		fog=yes
+	    [/modify_side]
+	    [message]
+		speaker=Haldrad
+		message= _ "This is not a drainage or coast, I've never seen fog like this here..."
+	    [/message]
+	    [message]
+		speaker=Dardrus
+		message= _ "You are right, there is something ominous."
+	    [/message]
+	    [music]
+		name=siege_of_laurelmor.ogg
+		append=no
+		immediate=yes
+	    [/music]
+	    [set_variable]
+		name=weldyn_here
+		add=1
+	    [/set_variable]
+	    {CLEAR_VARIABLE fog_here}
+		[/then]
+	    [/if]
+	[/event]
+
+	[event]
+	name=attack_end
+	    [filter]
+		side=4
+	    [/filter]
+	    [filter_second]
+		side=1
+	    [/filter_second]
+	[message]
+	    speaker=second_unit
+	    message= _ "Former friends..."
+	[/message]
+	[message]
+	    speaker=Haldrad
+	    message= _ "It is quite unnerving."
+	[/message]
+	[/event]
+
+	[event]
+	name=turn 8
+	    [set_variable]
+		name=weldyn_here
+		add=1
+	    [/set_variable]
+	[/event]
+
+	[event]
+	name=new turn
+	first_time_only=no
+	    [if]
+	    [variable]
+		name=weldyn_here
+		numerical_equals=2
+	    [/variable]
+	    [then]
+	[message]
+	    speaker=Haldrad
+	    message= _ "I do not like how this is going, these are not interceptors come to keep us from saving Weldyn.  Weldyn is lost, we should head to Elensefar; it is the next largest city and if we can assist in its defense, the kingdom may yet survive."
+	[/message]
+	[message]
+	    speaker=Dardrus
+	    message= _ "That may be, but I would suggest we head into the mountains to the north.  We may be able to find help there."
+	[/message]
+	[message]
+	    speaker=Haldrad
+	    message= _ "Are you suggesting we hide with the Dwarves?  That I will never do!  They would not let us in anyway, our relations are a bit strained these days."
+	[/message]
+	[message]
+	    speaker=Dardrus
+	    message= _ "What is 'the Dwarves'?  I have something else in mind-"
+	[/message]
+	[message]
+	    speaker=Haldrad
+	    message= _ "Fine!  Either way we need to head north of here.  Let us escape to the north, and we will figure out where to go from there."
+	[/message]
+		[objectives]
+		side=1
+			[objective]
+			condition=win
+			description=_ "Haldrad reaches the northern edge of map"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Death of Haldrad"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Death of Dardrus"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Time Runs Out"
+			[/objective]
+		[/objectives]
+# if the player is trying to game the system...
+	[store_unit]
+	    [filter]
+		id=Haldrad
+	    [/filter]
+	    variable=haldrad
+	    kill=no
+	[/store_unit]
+	[if]
+	    [variable]
+		name=haldrad.y
+	        less_than=13
+	    [/variable]
+	    [then]
+		    {GENERIC_UNIT 4 "Elvish Sharpshooter" 12 1}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=12,1}
+		    {GENERIC_UNIT 4 "Elvish Champion" 15 1}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=15,1}
+		    {GENERIC_UNIT 4 "Elvish Outrider" 21 1}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=21,1}
+		    {GENERIC_UNIT 4 "Elvish Hero" 26 1}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=26,1}
+		    {GENERIC_UNIT 4 "Grand Knight" 17 42}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=17,42}
+		    {GENERIC_UNIT 4 "Grand Knight" 18 40}
+		    [+unit]
+		    experience=3
+		    [/unit]
+		    {TRINITY_KHTHONIZED x,y=18,40}
+		[/then]
+	    [/if]
+	{CLEAR_VARIABLE haldrad}
+	[removeitem]
+	x,y=17,42
+	[/removeitem]
+	[item]
+        x=13
+        y=1
+        image="items/gohere.png"
+        [/item]
+		[/then]
+	    [/if]
+	[/event]
+
+	[event]
+	name=moveto
+	first_time_only=no
+	    [filter]
+		id=Haldrad
+		y=1-2
+	    [/filter]
+	[if]
+	    [variable]
+		name=weldyn_here
+		numerical_equals=2
+	    [/variable]
+		[then]
+	[message]
+	speaker=Haldrad
+	message= _ "We are no longer surrounded, but the enemy will catch up if we don't keep moving!"
+	[/message]
+	{CLEAR_VARIABLE weldyn_here}
+	    [endlevel]
+		{CONTINUE}
+	    [/endlevel]
+		[/then]
+	[/if]
+	[/event]
+
+	[event]
+	name=die
+	    [filter]
+		id=Dardrus
+	    [/filter]
+	[message]
+	speaker=Haldrad
+	message= _ "Oh, this is not good..."
+	[/message]
+	[endlevel]
+	   result=defeat
+	[/endlevel]
+	[/event]
+
+	[event]
+	name=die
+	    [filter]
+		id=Haldrad
+	    [/filter]
+	[message]
+	speaker=Dardrus
+	message= _ "Well, so much for that..."
+	[/message]
+	[endlevel]
+	   result=defeat
+	[/endlevel]
+	[/event]
+
+	[event]
+	name=time over
+		[message]
+		speaker=Haldrad
+		message= _ "We are being over-run.  I see movement on all sides, there is no escape."
+		[/message]
+		{FADE_TO_BLACK}
+		[endlevel]
+		result=defeat 
+		[/endlevel]
+	[/event]
+[/scenario]
