@@ -6,6 +6,9 @@
 {VILLAGE *^Vyb bellows}
 {VILLAGE *^Syb warship}
 {VILLAGE *^Gyb loyship}
+{VILLAGE_P *^Uyb 25 village-evil1}
+{VILLAGE_P *^Uyb 35 village-evil2}
+{VILLAGE_P *^Uyb 100 village-evil3}
 
 # More macros... Actually, no.
 
@@ -80,3 +83,93 @@
 
         probability=100
     [/terrain_graphics]
+
+# stars - does probability need to sum up to 100?
+  {TERRAIN_BASE_P          Syt                                     10                 stars/blue1}
+  {TERRAIN_BASE_P          Syt                                     11                 stars/blue2}
+  {TERRAIN_BASE_P          Syt                                     13                 stars/blue3}
+  {TERRAIN_BASE_P          Syt                                     14                 stars/blue4}
+  {TERRAIN_BASE_P          Syt                                     17                 stars/blue5}
+  {TERRAIN_BASE_P          Syt                                     17                 stars/blue6}
+  {TERRAIN_BASE_P          Syt                                     23                 stars/blue7}
+  {TERRAIN_BASE            Syt                                                        stars/blue}
+
+
+# Delete this crap.  Move to new add-on
+
+
+# For Castle Developement with the map editor.  White can be taken care of with snow
+{TERRAIN_BASE Blky doofus/black}
+{TERRAIN_BASE Grey doofus/grey}
+{TERRAIN_BASE Yelly doofus/yellow}
+{TERRAIN_BASE Redy doofus/red}
+{TERRAIN_BASE Bluy doofus/blue}
+# Labels for keeping track of what is the focus
+# CW
+{OVERLAY_L *^Dycwtr 1 doofus/cwtr}
+{OVERLAY_L *^Dycwr 1 doofus/cwr}
+{OVERLAY_L *^Dycwtr 1 doofus/cwtr}
+{OVERLAY_L *^Dycwtl 1 doofus/cwtl}
+{OVERLAY_L *^Dycwl 1 doofus/cwl}
+{OVERLAY_ *^Dycwbl 1 doofus/cwbl}
+# CCW
+{OVERLAY_L *^Dyccwtr 1 doofus/ccwtr}
+{OVERLAY_L *^Dyccwr 1 doofus/ccwr}
+{OVERLAY_L *^Dyccwtr 1 doofus/ccwtr}
+{OVERLAY_L *^Dyccwtl 1 doofus/ccwtl}
+{OVERLAY_L *^Dyccwl 1 doofus/ccwl}
+{OVERLAY_L *^Dyccwbl 1 doofus/ccwbl}
+# Castle, Keep, Keep-Castle
+{OVERLAY_L *^Dytr 1 doofus/tr}
+{OVERLAY_L *^Dyr 1 doofus/r}
+{OVERLAY_L *^Dybr 1 doofus/br}
+{OVERLAY_L *^Dytl 1 doofus/tl}
+{OVERLAY_L *^Dyl 1 doofus/l}
+{OVERLAY_L *^Dybl 1 doofus/bl}
+
+
+
+# Snow castles
+# (!,Chr,Chs,!,Ch*) <----------I'm not sure what that does... ! negates
+#{WALL_TRANSITION      (!,Chr,Chs,!,Ch*)  (W*)                            castle/sunken-ruin}
+#{WALL_TRANSITION2     (Khr,Khw,Khs)      (Ch*)           (!,Ch*,Kh*)     castle/keep-castle}
+#{WALL_TRANSITION      Kh*                (!,Kh*)                         castle/keep}
+# ---------------------------------
+#{KEEP_BASE               (Cha,Kha)                                              castle/cobbles}
+
+#{DISABLE_BASE_TRANSITIONS  (Cha,Kha)}
+#{WALL_TRANSITION      Cha  (!,Ch*,Kh*)                            castle/winter-castle/castle}
+#{WALL_TRANSITION2     Kha      Ch*           (!,Ch*,Kh*)     castle/winter-castle/keep-castle}
+#{WALL_TRANSITION      Kha                (!,Kh*)                         castle/winter-castle/keep}
+#{TRANSITION_BASE_LF    (Cha,Kha)            (Ai,W*)     -480 non_submerged_part castle/winter-castle/castle-to-ice}
+# ----------------------------------
+#{KEEP_BASE               Koa                                              castle/winter-orc/keep}
+#{TERRAIN_BASE_PROB_FL Coa castle/winter-orc/ground 50 base -1}
+#{TERRAIN_BASE_PROB_FL Coa castle/winter-orc/ground2 100 base -1}
+
+
+#{DISABLE_BASE_TRANSITIONS  (Coa,Koa)}
+#{WALL_TRANSITION      Coa  (!,Co*,Ko*)                            castle/winter-orc/fort}
+#{WALL_TRANSITION2     Koa      Co*           (!,Co*,Ko*)     castle/winter-orc/keep-fort}
+#{WALL_TRANSITION      Koa                (!,Ko*)                         castle/winter-orc/keep}
+#{TRANSITION_BASE_LF    (Coa,Koa)            (Ai,W*)     -480 non_submerged_part castle/winter-castle/castle-to-ice}
+
+{KEEP_BASE               Cyd                                              sand-castle/dirt}
+{KEEP_BASE               Kyd                                              sand-castle/cobbles}
+{DISABLE_BASE_TRANSITIONS  Cyd}
+{DISABLE_BASE_TRANSITIONS  Kyd}
+{WALL_TRANSITION      Cyd                (!,Cy*,Ky*)                         sand-castle/castle}
+{WALL_TRANSITION2     Kyd      Cyd           (!,Cy*,Ky*)     sand-castle/keep-castle}
+{WALL_TRANSITION      Kyd                (!,Ky*)                         sand-castle/keep}
+
+{KEEP_BASE               Cye                                              evil-castle/cobbles}
+{KEEP_BASE               Kye                                              evil-castle/cobbles}
+{OVERLAY                 Kye                                              evil-castle/keep}
+{DISABLE_BASE_TRANSITIONS  Cye}
+{DISABLE_BASE_TRANSITIONS  Kye}
+
+{WALL_TRANSITION      (Cye,Kye)        (!,Cye,Kye)                            evil-castle/castle}
+
+
+# I'm not sure how to do this...
+#{OVERLAY (Kyd^Ily) ("sand-castle/lit/

@@ -1,0 +1,382 @@
+#textdomain wesnoth-Trinity
+
+# A new dwarf village.  It will be animated at some point.  Or not.
+
+[terrain_type]
+   symbol_image=village/dwarven-tile
+   id=facility1
+   name= _ "Industrial Facility"
+   string=Uu^Vyb
+   aliasof=Gg^Vh, Uu
+   heals=8
+   gives_income=true
+   editor_group=trin
+[/terrain_type]
+
+[terrain_type]
+   symbol_image=village/dwarven-tile
+   id=evil1
+   name= _ "Evil Village"
+   string=Uu^Uyb
+   aliasof=Gg^Vh, Uu
+   heals=8
+   gives_income=true
+   editor_group=trin
+[/terrain_type]
+
+# Primeval Ships.  A type of village.
+
+[terrain_type]
+   symbol_image=village/coast-tile
+   id=ship1
+   name= _ "Primeval Ship"
+   string=Ww^Syb
+   aliasof=Gg^Vh, Ww
+   heals=8
+   gives_income=true
+   editor_group=trin
+[/terrain_type]
+
+# human ship
+
+[terrain_type]
+   symbol_image=village/coast-tile
+   id=ship2
+   name= _ "Human Ship"
+   string=Ww^Gyb
+   aliasof=Gg^Vh, Ww
+   heals=8
+   gives_income=true
+   editor_group=trin
+[/terrain_type]
+
+# Engine terrain
+
+[terrain_type]
+   symbol_image=engine-tile1
+   id=engine_tri
+   name= _ "Engine"
+   string=Uu^Eyt
+#   default_base=Re
+   aliasof=Xt
+#   mvt_alias="-,Hh,Ss,Ds"
+   editor_group=trin
+[/terrain_type]
+
+# Stars
+
+[terrain_type]
+   symbol_image=stars/blue
+   id=tri_stars
+   name= _ "Stars"
+   string=Syt
+#   default_base=Re
+   aliasof=Xt
+#   mvt_alias="-,Hh,Ss,Ds"
+   editor_group=trin
+[/terrain_type]
+
+########################
+# terrain creation
+########################
+
+# backgrounds (for visual isolation)
+[terrain_type]
+   symbol_image=doofus/blue
+   id=doofus_blue
+   name= _ "Blue"
+   string=Bluy
+   aliasof=Xt
+   editor_group=trin
+[/terrain_type]
+[terrain_type]
+   symbol_image=doofus/red
+   id=doofus_red
+   name= _ "Red"
+   string=Redy
+   aliasof=Xt
+   editor_group=trin
+[/terrain_type]
+[terrain_type]
+   symbol_image=doofus/yellow
+   id=doofus_yellow
+   name= _ "Yellow"
+   string=Yelly
+   aliasof=Xt
+   editor_group=trin
+[/terrain_type]
+[terrain_type]
+   symbol_image=doofus/grey
+   id=doofus_grey
+   name= _ "Grey"
+   string=Grey
+   aliasof=Xt
+   editor_group=trin
+[/terrain_type]
+[terrain_type]
+   symbol_image=doofus/black
+   id=doofus_black
+   name= _ "Black"
+   string=Blky
+   aliasof=Xt
+   editor_group=trin
+[/terrain_type]
+
+#overlays (to keep track of what each segment it is that needs editing)
+
+# CCW
+[terrain_type]
+    symbol_image=doofus/ccwtr
+    id=ccwtr
+    name= _ "ccw-tr"
+    string=^Dyccwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/ccwtl
+    id=ccwtl
+    name= _ "ccw-tl"
+    string=^Dyccwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/ccwl
+    id=ccwl
+    name= _ "ccw-l"
+    string=^Dyccwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/ccwbl
+    id=ccwbl
+    name= _ "ccw-bl"
+    string=^Dyccwbl
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/ccwbr
+    id=ccwbr
+    name= _ "ccw-br"
+    string=^Dyccwbr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/ccwr
+    id=ccwr
+    name= _ "ccw-r"
+    string=^Dyccwr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+
+# CW
+
+[terrain_type]
+    symbol_image=doofus/cwtr
+    id=cwtr
+    name= _ "cw-tr"
+    string=^Dycwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/cwtl
+    id=cwtl
+    name= _ "cw-tl"
+    string=^Dyccwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/cwl
+    id=cwl
+    name= _ "cw-l"
+    string=^Dycwtr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/cwbl
+    id=cwbl
+    name= _ "cw-bl"
+    string=^Dycwbl
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/cwbr
+    id=cwbr
+    name= _ "cw-br"
+    string=^Dycwbr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/cwr
+    id=cwr
+    name= _ "cw-r"
+    string=^Dycwr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+
+# All other
+
+[terrain_type]
+    symbol_image=doofus/tr
+    id=tr
+    name= _ "tr"
+    string=^Dytr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/tl
+    id=tl
+    name= _ "tl"
+    string=^Dytr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/l
+    id=l
+    name= _ "l"
+    string=^Dytr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/bl
+    id=bl
+    name= _ "bl"
+    string=^Dybl
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/br
+    id=br
+    name= _ "br"
+    string=^Dybr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+[terrain_type]
+    symbol_image=doofus/r
+    id=r
+    name= _ "r"
+    string=^Dyr
+    aliasof=_bas
+    mvt_alias=-,_bas
+    editor_group=trin
+[/terrain_type]
+
+
+# temp
+#[terrain_type]
+#   symbol_image=engine-tile1
+#   id=engine_tri2
+#   name= _ "Engine"
+#   string=Mm^Eyt
+#   default_base=Re
+#   aliasof=Xt
+#   mvt_alias="-,Hh,Ss,Ds"
+#   editor_group=trin
+#[/terrain_type]
+
+# for testing, delete before uploading
+
+#[terrain_type]
+#    symbol_image=castle/winter-castle/castle-tile
+#    id=castle
+#    name= _ "Winter Castle"
+#    string=Cha
+#    aliasof=Ch
+#    unit_height_adjust=3
+#    recruit_onto=true
+#    editor_group=trin
+#[/terrain_type]
+
+#[terrain_type]
+#    symbol_image=castle/winter-castle/keep-tile
+#    id=human_keep
+#    name= _ "Winter Keep"
+#    description=_ "Castle Keep"
+#    string=Kha
+#    aliasof=Ch
+#    unit_height_adjust=20
+#    recruit_from=true
+#    recruit_onto=true
+#    editor_group=trin
+#[/terrain_type]
+
+[terrain_type]
+    symbol_image=sand-castle/tile
+    id=sand_castle
+    name= _ "Sand Castle"
+    string=Cyd
+    aliasof=Ch
+    unit_height_adjust=3
+    recruit_onto=true
+    editor_group=trin
+[/terrain_type]
+
+[terrain_type]
+    symbol_image=sand-castle/keep-tile
+    id=sand_keep
+    name= _ "Sand Keep"
+    description=_ "Castle Keep"
+    string=Kyd
+    aliasof=Ch
+    unit_height_adjust=20
+    recruit_from=true
+    recruit_onto=true
+    editor_group=trin
+[/terrain_type]
+
+[terrain_type]
+    symbol_image=evil-castle/tile
+    id=evil_castle
+    name= _ "Evil Castle"
+    string=Cye
+    aliasof=Ch
+    unit_height_adjust=3
+    recruit_onto=true
+    editor_group=trin
+[/terrain_type]
+
+[terrain_type]
+    symbol_image=evil-castle/keep-tile
+    id=evil_keep
+    name= _ "Evil Keep"
+    description=_ "Evil Keep"
+    string=Kye
+    aliasof=Ch
+    unit_height_adjust=3
+    recruit_from=true
+    recruit_onto=true
+    editor_group=trin
+[/terrain_type]
