@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2010-03-15 19:59+0100\n"
+"POT-Creation-Date: 2010-04-30 19:54+0200\n"
 "PO-Revision-Date: 2010-03-15 19:59+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -57,9 +57,8 @@ msgstr ""
 #: Trinity/_main.cfg:24
 msgid ""
 "Weldyn is caught in the center of a clash between horrors from the north.  "
-"(Requires Archaic Era add-on.) 0.0.7 Status:  Some maps have been replaced.  "
-"Primeval branch is most changed, Human branch least.  Not complete - roughly "
-"13/19 scenarios done."
+"(Requires Archaic Era add-on.) 0.0.9 Status:  Works with Archaic Era "
+"0.9.15.  One more real scenario, a few story scenarios added.  Not complete."
 msgstr ""
 
 #. [about]
@@ -741,10 +740,14 @@ msgid "Death of Dolevan"
 msgstr ""
 
 #. [objective]: condition=lose
+#: Trinity/scenarios/3_P05_Landing.cfg:73
+#: Trinity/scenarios/3_P05_Landing.cfg:306
+#: Trinity/scenarios/3_P05_Landing.cfg:375
+#: Trinity/scenarios/3_H06_Reversal.cfg:38
 #: Trinity/scenarios/3_H05_Encounter.cfg:55
 #: Trinity/scenarios/3_H05_Encounter.cfg:462
 #: Trinity/scenarios/3_H05_Encounter.cfg:905
-#: Trinity/scenarios/3_P05_Stowaway.cfg:81
+#: Trinity/scenarios/3_K06_Choice.cfg:42 Trinity/scenarios/3_P07_Air.cfg:54
 #: Trinity/scenarios/3_H04_Signal.cfg:60
 #: Trinity/scenarios/3_H04_Signal.cfg:313
 #: Trinity/scenarios/3_K05_Interrogation.cfg:41
@@ -1169,8 +1172,8 @@ msgstr ""
 #. [message]: speaker=Haldrad
 #: Trinity/scenarios/3_H05_Encounter.cfg:588
 msgid ""
-"Yes, 'khrrr' was not the response I expected.  Has Weldyn been lost?  Or is "
-"this a thin arm of the beseigers that we must break through?"
+"Yes, 'khrrr' was not the response I expected.  Has Weldyn been lost?  Or are "
+"we needed there to break a siege?"
 msgstr ""
 
 #. [message]: speaker=Haldrad
@@ -1261,6 +1264,87 @@ msgstr ""
 #: Trinity/scenarios/3_H05_Encounter.cfg:1024
 msgid ""
 "We are being over-run.  I see movement on all sides, there is no escape."
+msgstr ""
+
+#. [scenario]: id=3_H06
+#: Trinity/scenarios/3_H06_Reversal.cfg:6
+msgid "Reversal"
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_H06_Reversal.cfg:22
+msgid ""
+"Haldrad and Co. moved through the hills north of Wesmere and made it to "
+"Elensefar in good time."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_H06_Reversal.cfg:26
+msgid ""
+"When they arrived, however, there was a flag flying over the castle towers "
+"that was unfamiliar to Haldrad, though it was not unfamiliar to Dardrus.  As "
+"the group approached the gates, they were approached by unfamiliar "
+"fighters.  At least they were human..."
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_H06_Reversal.cfg:143
+#: Trinity/scenarios/3_K06_Choice.cfg:107 Trinity/scenarios/3_P07_Air.cfg:119
+msgid "Halt!"
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_H06_Reversal.cfg:148
+msgid "He bears the crest of the defeated Queen!  Arrest him!"
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/3_H06_Reversal.cfg:155
+#: Trinity/scenarios/3_K06_Choice.cfg:119 Trinity/scenarios/3_P07_Air.cfg:131
+msgid ""
+"Stop!  He is with me, I employ him as a guide.  We have come to warn you of "
+"the Khthon onslaught coming from the east."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/3_H06_Reversal.cfg:159
+#: Trinity/scenarios/3_K06_Choice.cfg:123 Trinity/scenarios/3_P07_Air.cfg:135
+msgid "(What are you talking about?)"
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/3_H06_Reversal.cfg:163
+#: Trinity/scenarios/3_K06_Choice.cfg:127 Trinity/scenarios/3_P07_Air.cfg:139
+msgid "(Just trust me for now.  You have no choice...)"
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_H06_Reversal.cfg:168
+#: Trinity/scenarios/3_K06_Choice.cfg:139 Trinity/scenarios/3_P07_Air.cfg:151
+msgid "You - you are one of the gods?"
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/3_H06_Reversal.cfg:172
+#: Trinity/scenarios/3_K06_Choice.cfg:143 Trinity/scenarios/3_P07_Air.cfg:155
+msgid "Not exactly, but I am a friend.  Please take us to see your Goddess."
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_H06_Reversal.cfg:176
+msgid "... "
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_H06_Reversal.cfg:183
+msgid "Come with me!"
+msgstr ""
+
+#. [message]: speaker=Keldan_
+#: Trinity/scenarios/3_H06_Reversal.cfg:204
+msgid ""
+"<i>The human forces are allied with the red-eyed bastards...  Echidna will "
+"not be pleased to hear that our enemy has the Angry Eye...</i>"
 msgstr ""
 
 #. [scenario]: id=3_K01
@@ -1733,6 +1817,8 @@ msgid ""
 msgstr ""
 
 #. [objective]: condition=win
+#: Trinity/scenarios/3_P05_Landing.cfg:294
+#: Trinity/scenarios/3_P05_Landing.cfg:363
 #: Trinity/scenarios/3_K04_Storm.cfg:80 Trinity/scenarios/3_K04_Storm.cfg:772
 #: Trinity/scenarios/3_P01_Village.cfg:54
 msgid "Defeat Enemy Leaders"
@@ -1986,42 +2072,32 @@ msgid ""
 "to check the perimeter and gaze at the stars..."
 msgstr ""
 
-#. [message]: speaker=Keldan
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P05_Stowaway.cfg:131
 #: Trinity/scenarios/3_K05_Interrogation.cfg:132
 msgid "Grumble...  Dark skies hide the stars..."
 msgstr ""
 
-#. [message]: speaker=Keldan
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P05_Stowaway.cfg:136
 #: Trinity/scenarios/3_K05_Interrogation.cfg:137
 msgid "The dark clouds are thickest to the north.  What is that?"
 msgstr ""
 
-#. [message]: speaker=Keldan
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P05_Stowaway.cfg:146
 #: Trinity/scenarios/3_K05_Interrogation.cfg:147
 msgid "That is not good...  (<i>Echidna...  Come see this...</i>)"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_P05_Stowaway.cfg:153
 #: Trinity/scenarios/3_K05_Interrogation.cfg:154
 msgid "What is it?  I've just been extracting wonderful news..."
 msgstr ""
 
-#. [message]: speaker=Keldan
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P05_Stowaway.cfg:157
 #: Trinity/scenarios/3_K05_Interrogation.cfg:158
 msgid "Something evil is to the north..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_P05_Stowaway.cfg:161
 #: Trinity/scenarios/3_K05_Interrogation.cfg:162
 msgid ""
 "Echidna followed Keldan's gaze, then shrank back with fear as she realized "
@@ -2029,18 +2105,63 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_P05_Stowaway.cfg:166
 #: Trinity/scenarios/3_K05_Interrogation.cfg:167
 msgid ""
 "No!  How is he...  We need to leave!  We will head west to obtain the Angry "
 "Eye from the human leader..."
 msgstr ""
 
-#. [message]: speaker=Keldan
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P05_Stowaway.cfg:170
 #: Trinity/scenarios/3_K05_Interrogation.cfg:171
 msgid "Yes Echidna, I will round up our bretheren..."
+msgstr ""
+
+#. [scenario]: id=3_K06
+#: Trinity/scenarios/3_K06_Choice.cfg:6
+msgid "Prisoners"
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_K06_Choice.cfg:22
+msgid ""
+"Bresda led Dardrus and Haldrad to the central Governor's Hall, a place "
+"familiar to Haldrad in happier days.  Usually, the Hall was a place where "
+"the Governor would administer justice and policy in the absence of the "
+"Queen.  But now it was filled with a ragged crew of olive-skinned militants, "
+"many of whom wore the armour stolen from the bodies of Weldyn's finest."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_K06_Choice.cfg:26
+msgid ""
+"It was all Haldrad could do to hold his tongue at the outrage, but when he "
+"saw the winged figure sitting upon the throne, he knew he was in over his "
+"head.  He hoped his trust in Dardrus was not misplaced..."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_K06_Choice.cfg:30
+msgid ""
+"As you should know, this campaign is still under construction.  This is the "
+"end of it for now."
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_K06_Choice.cfg:112 Trinity/scenarios/3_P07_Air.cfg:124
+msgid "(He looks like he is with the defeated Queen.  Arrest him!)"
+msgstr ""
+
+#. [message]: speaker=Bresda_
+#: Trinity/scenarios/3_K06_Choice.cfg:147 Trinity/scenarios/3_P07_Air.cfg:159
+msgid "...  Come with me!"
+msgstr ""
+
+#. [message]: speaker=Keldan_
+#: Trinity/scenarios/3_K06_Choice.cfg:168 Trinity/scenarios/3_P07_Air.cfg:180
+msgid ""
+"<i>The human forces are allied with the red-eyed bastards, this city must be "
+"a stronghold...  If we can slip to the north of the city, they will be "
+"between us and the evil on our tails...</i>"
 msgstr ""
 
 #. [scenario]: id=3_P01
@@ -2086,6 +2207,9 @@ msgid ""
 msgstr ""
 
 #. [objective]: condition=lose
+#: Trinity/scenarios/3_P05_Landing.cfg:65
+#: Trinity/scenarios/3_P05_Landing.cfg:298
+#: Trinity/scenarios/3_P05_Landing.cfg:367
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:43
 #: Trinity/scenarios/3_P01_Village.cfg:58
 #: Trinity/scenarios/3_P02_Entrance.cfg:36 Trinity/scenarios/3_P03_Cave.cfg:57
@@ -2102,6 +2226,9 @@ msgid "Death of Ponce"
 msgstr ""
 
 #. [objective]: condition=lose
+#: Trinity/scenarios/3_P05_Landing.cfg:69
+#: Trinity/scenarios/3_P05_Landing.cfg:302
+#: Trinity/scenarios/3_P05_Landing.cfg:371
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:47
 #: Trinity/scenarios/3_P01_Village.cfg:66
 #: Trinity/scenarios/3_P02_Entrance.cfg:40 Trinity/scenarios/3_P03_Cave.cfg:49
@@ -2125,6 +2252,7 @@ msgid "Izara"
 msgstr ""
 
 #. [side]: type=Primeval Nemesis-low, id=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:133
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:161
 #: Trinity/scenarios/3_P01_Village.cfg:160
 #: Trinity/scenarios/3_P02_Entrance.cfg:167
@@ -2413,6 +2541,8 @@ msgid "Yes, fight fire with fire!"
 msgstr ""
 
 #. [message]: speaker=narrator
+#: Trinity/scenarios/3_P05_Landing.cfg:271
+#: Trinity/scenarios/3_P05_Landing.cfg:380
 #: Trinity/scenarios/3_P02_Entrance.cfg:249
 msgid "You can now recruit Arsonists."
 msgstr ""
@@ -2903,13 +3033,14 @@ msgstr ""
 #. [unit_type]: id=Harridan, race=south-seas_human
 #. [unit_type]: id=Termagant, race=south-seas_human
 #. [unit_type]: id=Virago, race=south-seas_human
+#. [unit_type]: id=Primevalist Heroine, race=south-seas_human
 #. [message]: speaker=Ponce
 #: Trinity/units/Cannon.cfg:22 Trinity/units/Echidna-Mid.cfg:20
 #: Trinity/units/Ponce.cfg:30 Trinity/units/Ponce.cfg:117
 #: Trinity/units/Ponce.cfg:213 Trinity/units/Echidna-Low.cfg:22
 #: Trinity/units/Sea-Monsters.cfg:25 Trinity/units/Bresda.cfg:24
 #: Trinity/units/Bresda.cfg:93 Trinity/units/Bresda.cfg:184
-#: Trinity/scenarios/3_P04_Engine.cfg:228
+#: Trinity/units/Bresda.cfg:271 Trinity/scenarios/3_P04_Engine.cfg:228
 msgid "..."
 msgstr ""
 
@@ -3033,6 +3164,7 @@ msgid "This island really has been over-run by reptiles."
 msgstr ""
 
 #. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:465
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:368
 #: Trinity/scenarios/3_P04_Engine.cfg:405
 msgid "How could this happen..."
@@ -3209,117 +3341,260 @@ msgid ""
 msgstr ""
 
 #. [scenario]: id=3_P05
-#: Trinity/scenarios/3_P05_Stowaway.cfg:6
-msgid "Clarity"
+#: Trinity/scenarios/3_P05_Landing.cfg:6
+msgid "Landing"
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:22
+#: Trinity/scenarios/3_P05_Landing.cfg:21
 msgid ""
-"When Ponce regained consciousness, he was on his back, naked under a heavy "
-"blanket.  He was too tired to be alarmed."
+"When Ponce regained consciousness, he was on his back, looking up at the "
+"blue sky.  He tried to sit up, but could not - he was tied down by white "
+"cloth and the pain in his back.  As he sank back down, he felt the gentle "
+"rocking and heard the slow creaking of a ship in dock."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:26
+#: Trinity/scenarios/3_P05_Landing.cfg:25
 msgid ""
-"A woman was standing over him, gazing down with solid black eyes.  Ponce "
-"realized he was lying on the ground.  <i>Oh, this can't be good.</i>  Then "
-"the woman spoke:"
+"Someone must have seen his movement, for soon there were faces peering down "
+"into his.  Some were the sun-and-salt weathered faces of fishermen.  Others "
+"were the haggard and pale faces of inland soldiers from a land not his own.  "
+"Well, at least he was alive and at least they were human ... He passed out."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:30
+#: Trinity/scenarios/3_P05_Landing.cfg:29
 msgid ""
-"'Welcome back to the land of the living!  You were in bad shape, but you'll "
-"be back on your feet soon.'  Ponce had been around long enough to know there "
-"had to be a catch, no one does anything nice for no reason."
+"When he regained conciousness, he was on a veranda overlooking the sea.  A "
+"well-dressed man to his left across a small table was also facing the sea.  "
+"'Welcome back to the land of the living!', he exclaimed."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:36
+#: Trinity/scenarios/3_P05_Landing.cfg:33
 msgid ""
-"From his disadvantaged position on the ground, he asked, 'What exactly is it "
-"that you want?'\n"
-"'So suspicious, but that is good.  I've saved you because you can help save "
-"your world.'\n"
-"'What?'"
+"You feel better, yes?  Good!  You said we needed to be prepared for "
+"something - something about red-eyed demons...  Care to elaborate?"
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:40
+#: Trinity/scenarios/3_P05_Landing.cfg:37
 msgid ""
-"The dark-eyed stranger explained that she was a stowaway on the Primeval "
-"facility, and there were others like her on other facilities.  She was from "
-"a race that pre-dated the Primevals, and was in part responsible for their "
-"existence."
+"Ponce struggled to recollect his thoughts.  He knew the well-dressed man was "
+"witholding something, but he was too disoriented to figure out what.  He "
+"told what he knew of the red-eyed monster named Nemesis and the island with "
+"an engine.  The well-dressed man nodded and stared out at sea."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:44
+#: Trinity/scenarios/3_P05_Landing.cfg:41
 msgid ""
-"Long, long ago, when the world was much simpler and there were no major "
-"civilizations, a great destructive being arrived from somewhere far away.  "
-"The skies rained corrosive red streams, the ground heaved in pain, as the "
-"destructive being consumed the planet.  Irdya would not die easily, and so a "
-"counter force fought the intruder."
+"Ponce followed the man's gaze and saw for the first time an island that did "
+"not fit with the others.  A river ran into the sea, forming a fertile delta "
+"where hard-wood trees took root on several small islands made of silt and "
+"sand.  But one island had few hard-woods, many palm trees, and sharp granite "
+"ridges - It was all too familiar..."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:48
+#: Trinity/scenarios/3_P05_Landing.cfg:45
 msgid ""
-"The destroyer was split into two halves:  the cold, sterile, calculating "
-"consciousness; the vitality, passion, and drive.  The consciousness was "
-"imprisoned in a world between the living and dead, where it could not direct "
-"or re-unite with the vitality."
+"'You must come with me to see the Queen, your experiences could be of use.  "
+"Do not worry, you will be handsomely compensated.', said the well-dressed "
+"man as he stood up to leave.  Ponce found he could also stand, so he "
+"followed the well-dressed man out to a waiting carriage."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:52
+#: Trinity/scenarios/3_P05_Landing.cfg:49
 msgid ""
-"The vitality could be used to make the planet stonger by shedding its "
-"essence throughout the soil and rock, as long as it did not triumph over the "
-"native inhabitants. So one race was chosen to keep the vitality in check, "
-"that race became known as the Primevals.  The destroyer's vitality became "
-"known as the Khthon.  Whenever one of the adversaries became too strong, "
-"events would transpire to bring the other into competition."
+"Meanwhile, Nemesis was moving the island into a range close enough to make "
+"landfall..."
+msgstr ""
+
+#. [objective]: condition=win
+#: Trinity/scenarios/3_P05_Landing.cfg:61
+msgid "Gain control of one of the docks"
+msgstr ""
+
+#. [objectives]
+#: Trinity/scenarios/3_P05_Landing.cfg:75
+msgid "To gain control of the docks, just capture the fancy villages."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:205
+msgid "I can see lights of a city..."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:210
+msgid "And I think I see figures."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:214
+msgid ""
+"That city is in the way, but we really need to keep moving east and that "
+"river looks like it should be large enough for us to continue inland."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Trinity/scenarios/3_P05_Landing.cfg:218
+msgid ""
+"As if on cue, a brass sparrow flew up to Nemesis and landed on her "
+"outstretched hand.  Bresda and the sailors heard a tinny melody, but Nemesis "
+"must have heard something else."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:223
+msgid ""
+"Yes, we must head inland, and we must wrest control of this city from those "
+"coming to intercept us."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:227
+msgid "Alright, you heard her!  To arms!"
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Trinity/scenarios/3_P05_Landing.cfg:231
+msgid ""
+"The defenses of Elensefar include artillary that will kill any unit that "
+"does not move out of the cross-hairs."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:259
+#: Trinity/scenarios/3_P05_Landing.cfg:339
+msgid "We have control of a landing point!"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:263
+#: Trinity/scenarios/3_P05_Landing.cfg:343
+msgid "Very good.  Let us set up a camp there."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:267
+msgid ""
+"If we do not need to get into the water, we can have dry fuel for our "
+"Arsonists."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:288
+#: Trinity/scenarios/3_P05_Landing.cfg:357
+msgid ""
+"Now we take control of their castle.  Bring the sceptre of their leader to "
+"me."
+msgstr ""
+
+#. [message]: speaker=Caldera
+#: Trinity/scenarios/3_P05_Landing.cfg:311
+#: Trinity/scenarios/3_P05_Landing.cfg:388
+msgid "The people of Wesnoth are not easily defeat, intruders!"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:405
+msgid "We are defeating them!"
+msgstr ""
+
+#. [message]: speaker=Faro
+#: Trinity/scenarios/3_P05_Landing.cfg:416
+msgid ""
+"I don't regret trying to defend the city, they have helped us in the past."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:420
+msgid "How touching...  Now that's enough out of you."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/3_P05_Landing.cfg:431
+msgid "We've defeated their Queen!  We have the sceptre!"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:435
+msgid ""
+"Don't kill her.  We may need high-value hostages, depending upon how strong "
+"the rest of their forces are..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:451
+msgid ""
+"I feel as strong as my old self...  We should think about heading east, but "
+"let us consolidate our triumph first..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:479
+msgid "I should have taken better care..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/3_P05_Landing.cfg:494
+msgid ""
+"There is something wrong, I think I see Khthon.  Echidna has taken control..."
+msgstr ""
+
+#. [scenario]: id=3_P06
+#: Trinity/scenarios/3_P07_Air.cfg:6
+msgid "Air"
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:56
+#: Trinity/scenarios/3_P07_Air.cfg:22
 msgid ""
-"Of course, the Primevals could not be trusted, so Observers were sent to "
-"shadow them in case the Primeval/Khthon balance was upset.  The woman "
-"speaking to Ponce was a manifestation of an Observer, and the balance was "
-"about to be upset."
+"With her wings restored, Nemesis could move quickly over the great distance "
+"to where she thought the last Pantheon structure would be."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:64
+#: Trinity/scenarios/3_P07_Air.cfg:26
 msgid ""
-"'How so?,' asked Ponce.\n"
-"'The vitality has gained the upper hand, and the concsiencness is breaking "
-"free of its barrier.  Yet all is not yet lost.  The Primeval Nemesis is "
-"rallying forces as we speak-'\n"
-"'The winged daemon who tried to kill me!?'\n"
-"'Yes, her.  It was a strategic decision, it was nothing personal.  Now "
-"please, shut up and listen!'\n"
-"    The heart of the vitality is Echidna, we will try to form an allience "
-"with her because she is scared of the conscienceness, for if she and the "
-"conciousness re-unite, she and all her children will be consumed in the "
-"resurrection of the destroyer.  The breach through which the concsiousness "
-"is emerging is where you come in."
+"From the ground, it would have been difficult to detect.  But from the air, "
+"there was no mistaking the triangular shape.  She landed in the centre of "
+"the shape, and did not have to search long before she found loose rocks "
+"hiding an entrance."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/3_P05_Stowaway.cfg:69
+#: Trinity/scenarios/3_P07_Air.cfg:30
 msgid ""
-"'I don't see how I'm going to have any effect on anything.  A wounded naked "
-"man versus ancient gods...' grumpled Ponce.  Oh, he was so tired.\n"
-"'No, you are useful enough.  You will steer this island up the great river "
-"and into the breach of the conscienceness.  You are a pirate and know how to "
-"master acquired vessals, this is no different.  Rest now, we will talk more "
-"later.'"
+"With the power of the Gem from the Sceptre, she was able to bring the "
+"structure's system back to life.  Because she wanted to secure her power, "
+"she did not unlock the chambers holding her sleeping fellows..."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_P07_Air.cfg:34
+msgid ""
+"But as she steered the entire stucture into the sky, she had a fairly good "
+"idea of who was behind the stone slab.  Now, she would go back to Elensefar "
+"and the sea-going structure."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_P07_Air.cfg:38
+msgid ""
+"From her vantage point in the sky, Nemesis could see stormclouds gathering "
+"in an oddly isolated column.  She steered around it and continued on to the "
+"coast.  When the city was in her shadow, she stopped the sky structure and "
+"flew down to her terrified followers."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/3_P07_Air.cfg:42
+msgid "This is campaign is still under construction, this is all for now."
 msgstr ""
 
 #. [unit_type]: id=Ancient Avatar, race=phantom_spirit
@@ -3411,6 +3686,24 @@ msgstr ""
 msgid "female^Virago"
 msgstr ""
 
+#. [unit_type]: id=Primevalist Heroine, race=south-seas_human
+#: Trinity/units/Bresda.cfg:250
+msgid "female^Heroine"
+msgstr ""
+
+#. [attack]: type=blade
+#: Trinity/units/Primeval_Nemesis-Hi.cfg:55
+#: Trinity/units/Primeval_Nemesis-Mid.cfg:42
+#: Trinity/units/Primeval_Hera.cfg:46 Trinity/units/Echidna-Low.cfg:29
+#: Trinity/units/Primeval_Nemesis-Low.cfg:42 Trinity/units/Bresda.cfg:289
+msgid "Sword"
+msgstr ""
+
+#. [attack]: type=cold
+#: Trinity/units/Bresda.cfg:298
+msgid "Curse"
+msgstr ""
+
 #. [unit_type]: id=Trinity Cannon, race=human
 #: Trinity/units/Cannon.cfg:5
 msgid "Rocket Mortar"
@@ -3419,14 +3712,6 @@ msgstr ""
 #. [attack]: type=fire
 #: Trinity/units/Cannon.cfg:26
 msgid "Torch"
-msgstr ""
-
-#. [attack]: type=blade
-#: Trinity/units/Primeval_Nemesis-Hi.cfg:55
-#: Trinity/units/Primeval_Nemesis-Mid.cfg:42
-#: Trinity/units/Primeval_Hera.cfg:46 Trinity/units/Echidna-Low.cfg:29
-#: Trinity/units/Primeval_Nemesis-Low.cfg:42
-msgid "Sword"
 msgstr ""
 
 #. [attack]: type=fire
@@ -3659,12 +3944,12 @@ msgid "Harvest the power"
 msgstr ""
 
 #. [print]
-#: Trinity/utils/cannons.cfg:38
+#: Trinity/utils/cannons.cfg:71
 msgid "FIRE!"
 msgstr ""
 
 #. [print]
-#: Trinity/utils/cannons.cfg:84
+#: Trinity/utils/cannons.cfg:117
 msgid "Targetting..."
 msgstr ""
 
@@ -3693,22 +3978,52 @@ msgstr ""
 msgid "Industrial Facility"
 msgstr ""
 
+#. [terrain_type]: id=evil1
+#: Trinity/utils/terrain.cfg:19
+msgid "Evil Village"
+msgstr ""
+
 #. [terrain_type]: id=ship1
-#: Trinity/utils/terrain.cfg:21
+#: Trinity/utils/terrain.cfg:32
 msgid "Primeval Ship"
 msgstr ""
 
 #. [terrain_type]: id=ship2
-#: Trinity/utils/terrain.cfg:34
+#: Trinity/utils/terrain.cfg:45
 msgid "Human Ship"
 msgstr ""
 
 #. [terrain_type]: id=engine_tri
-#: Trinity/utils/terrain.cfg:47
+#: Trinity/utils/terrain.cfg:58
 msgid "Engine"
 msgstr ""
 
 #. [terrain_type]: id=tri_stars
-#: Trinity/utils/terrain.cfg:60
+#: Trinity/utils/terrain.cfg:71
 msgid "Stars"
+msgstr ""
+
+#. [terrain_type]: id=sand_castle
+#: Trinity/utils/terrain.cfg:121
+msgid "Sand Castle"
+msgstr ""
+
+#. [terrain_type]: id=sand_keep
+#: Trinity/utils/terrain.cfg:132
+msgid "Sand Keep"
+msgstr ""
+
+#. [terrain_type]: id=sand_keep
+#: Trinity/utils/terrain.cfg:133
+msgid "Castle Keep"
+msgstr ""
+
+#. [terrain_type]: id=evil_castle
+#: Trinity/utils/terrain.cfg:145
+msgid "Evil Castle"
+msgstr ""
+
+#. [terrain_type]: id=evil_keep
+#: Trinity/utils/terrain.cfg:156 Trinity/utils/terrain.cfg:157
+msgid "Evil Keep"
 msgstr ""
