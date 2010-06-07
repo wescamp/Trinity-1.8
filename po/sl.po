@@ -2,10 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2010-05-11 00:28+0200\n"
+"POT-Creation-Date: 2010-06-07 13:08+0200\n"
 "PO-Revision-Date: 2010-02-03 02:36+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,7 +58,7 @@ msgstr ""
 #: Trinity/_main.cfg:24
 msgid ""
 "Weldyn is caught in the center of a clash between horrors from the north.  "
-"(Requires Archaic Era add-on.) 0.0.11 Status:  Not complete, getting there."
+"(Requires Archaic Era add-on.) 0.0.13 Status: Not quite finished, but close."
 msgstr ""
 
 #. [about]
@@ -223,13 +224,15 @@ msgid "Move Haldrad and Dardrus past the city gates. (signpost)"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Trinity/scenarios/F1a_Onslaught.cfg:44
+#: Trinity/scenarios/F5a_Destroyer.cfg:40
+#: Trinity/scenarios/F1a_Onslaught.cfg:44 Trinity/scenarios/F4a_Hera.cfg:56
 #: Trinity/scenarios/3_H03_Spirits.cfg:44
 #: Trinity/scenarios/3_H05_Encounter.cfg:454
 #: Trinity/scenarios/3_H05_Encounter.cfg:897
 #: Trinity/scenarios/F1b_GoingEast.cfg:41
 #: Trinity/scenarios/3_H01_Beggar.cfg:56 Trinity/scenarios/3_H02_Weldyn.cfg:49
-#: Trinity/scenarios/F2a_Air.cfg:67 Trinity/scenarios/3_H04_Signal.cfg:48
+#: Trinity/scenarios/F2a_Air.cfg:63 Trinity/scenarios/F3a_Phantom.cfg:50
+#: Trinity/scenarios/3_H04_Signal.cfg:48
 #: Trinity/scenarios/3_H04_Signal.cfg:301
 msgid "Death of Haldrad"
 msgstr ""
@@ -469,13 +472,14 @@ msgid "Survive until the end of turns"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Trinity/scenarios/F1a_Onslaught.cfg:48
+#: Trinity/scenarios/F5a_Destroyer.cfg:44
+#: Trinity/scenarios/F1a_Onslaught.cfg:48 Trinity/scenarios/F4a_Hera.cfg:60
 #: Trinity/scenarios/3_H03_Spirits.cfg:48
 #: Trinity/scenarios/3_H05_Encounter.cfg:458
 #: Trinity/scenarios/3_H05_Encounter.cfg:901
 #: Trinity/scenarios/F1b_GoingEast.cfg:45
-#: Trinity/scenarios/3_H02_Weldyn.cfg:53 Trinity/scenarios/F2a_Air.cfg:71
-#: Trinity/scenarios/3_H04_Signal.cfg:56
+#: Trinity/scenarios/3_H02_Weldyn.cfg:53 Trinity/scenarios/F2a_Air.cfg:67
+#: Trinity/scenarios/F3a_Phantom.cfg:54 Trinity/scenarios/3_H04_Signal.cfg:56
 #: Trinity/scenarios/3_H04_Signal.cfg:309
 msgid "Death of Dardrus"
 msgstr ""
@@ -672,7 +676,7 @@ msgstr ""
 #. [message]: speaker=Haldrad
 #: Trinity/scenarios/3_H03_Spirits.cfg:241
 #: Trinity/scenarios/3_H05_Encounter.cfg:1003
-#: Trinity/scenarios/3_H04_Signal.cfg:378
+#: Trinity/scenarios/3_H04_Signal.cfg:376
 msgid "Oh, this is not good..."
 msgstr ""
 
@@ -684,7 +688,7 @@ msgstr ""
 #. [message]: speaker=Haldrad
 #. [message]: speaker=Echidna
 #: Trinity/scenarios/3_H03_Spirits.cfg:272
-#: Trinity/scenarios/3_K04_Storm.cfg:533 Trinity/scenarios/3_K03_Lord.cfg:342
+#: Trinity/scenarios/3_K04_Storm.cfg:537 Trinity/scenarios/3_K03_Lord.cfg:346
 msgid "Don't kill him!"
 msgstr ""
 
@@ -751,14 +755,13 @@ msgstr ""
 
 #. [objective]: condition=lose
 #: Trinity/scenarios/3_P05_Landing.cfg:73
-#: Trinity/scenarios/3_P05_Landing.cfg:338
-#: Trinity/scenarios/3_P05_Landing.cfg:412
+#: Trinity/scenarios/3_P05_Landing.cfg:327
+#: Trinity/scenarios/3_P05_Landing.cfg:401
 #: Trinity/scenarios/3_H06_Reversal.cfg:38
 #: Trinity/scenarios/3_H05_Encounter.cfg:55
 #: Trinity/scenarios/3_H05_Encounter.cfg:462
 #: Trinity/scenarios/3_H05_Encounter.cfg:905
-#: Trinity/scenarios/3_K06_Choice.cfg:52 Trinity/scenarios/3_P07_Air.cfg:54
-#: Trinity/scenarios/3_H04_Signal.cfg:60
+#: Trinity/scenarios/3_K06_Choice.cfg:52 Trinity/scenarios/3_H04_Signal.cfg:60
 #: Trinity/scenarios/3_H04_Signal.cfg:313
 #: Trinity/scenarios/3_K05_Interrogation.cfg:41
 msgid "Time Runs Out"
@@ -871,99 +874,99 @@ msgstr ""
 
 #. [objectives]
 #: Trinity/scenarios/3_H04_Signal.cfg:315
-msgid "Finish off either Tonk or Largosh with Dolevan to interrogate them."
+msgid "Finish off Largosh with Dolevan to interrogate him."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:329
+#: Trinity/scenarios/3_H04_Signal.cfg:332
 msgid "You said 'they've made it this far south', what did you mean by that?"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_H04_Signal.cfg:333
+#: Trinity/scenarios/3_H04_Signal.cfg:336
 msgid "I meant nothing, I've nothing to say to you."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:337
+#: Trinity/scenarios/3_H04_Signal.cfg:340
 msgid ""
 "You were shocked to see the red-eyed man this far south?  We were suprised "
 "to see orcs at all."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_H04_Signal.cfg:341
+#: Trinity/scenarios/3_H04_Signal.cfg:344
 msgid "Whaddaya mean?  What's happened!?  We've really lost?"
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:345
+#: Trinity/scenarios/3_H04_Signal.cfg:348
 msgid "I'm afraid so.  I'm not sure how many orcs are left, but not many."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_H04_Signal.cfg:349
+#: Trinity/scenarios/3_H04_Signal.cfg:352
 msgid ""
 "Garrgh!  Their legions drove us out of the north, and now I - one of the "
 "last orcs - am to die at the hands of human worms..."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:353
+#: Trinity/scenarios/3_H04_Signal.cfg:356
 msgid "(whispers to self:  Legions?  I don't like the sound of that...)"
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/3_H04_Signal.cfg:364
+#: Trinity/scenarios/3_H04_Signal.cfg:362
 msgid "Now we can head back.  I hope this was worth it."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:392
+#: Trinity/scenarios/3_H04_Signal.cfg:390
 msgid "Oh dear..."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/3_H04_Signal.cfg:406
+#: Trinity/scenarios/3_H04_Signal.cfg:404
 msgid "Getting the wiseman killed... Damnation!"
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/3_H04_Signal.cfg:417
+#: Trinity/scenarios/3_H04_Signal.cfg:415
 msgid "A fog rolls in..."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:425
+#: Trinity/scenarios/3_H04_Signal.cfg:423
 msgid ""
 "So you can't do your ritual. Maybe some other time then - Let's be on our "
 "way!"
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/3_H04_Signal.cfg:429
+#: Trinity/scenarios/3_H04_Signal.cfg:427
 msgid "No, the fog does not matter. We continue upward."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:433
+#: Trinity/scenarios/3_H04_Signal.cfg:431
 msgid "Princling, are you going to let him give the orders? Take control!"
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/3_H04_Signal.cfg:437
+#: Trinity/scenarios/3_H04_Signal.cfg:435
 msgid ""
 "We've come this far. If he says the fog does not matter, it does not matter."
 msgstr ""
 
 #. [message]: speaker=Dolevan
-#: Trinity/scenarios/3_H04_Signal.cfg:441
+#: Trinity/scenarios/3_H04_Signal.cfg:439
 msgid "(Young fool...)"
 msgstr ""
 
 #. [message]: speaker=Dolevan
 #: Trinity/scenarios/3_H05_Encounter.cfg:403
-#: Trinity/scenarios/3_H04_Signal.cfg:450
+#: Trinity/scenarios/3_H04_Signal.cfg:448
 msgid ""
 "This is taking forever. For what, I ask? For nothing! I am gone, don't try "
 "to follow me!"
@@ -971,7 +974,7 @@ msgstr ""
 
 #. [message]: speaker=Haldrad
 #: Trinity/scenarios/3_H05_Encounter.cfg:408
-#: Trinity/scenarios/3_H04_Signal.cfg:455
+#: Trinity/scenarios/3_H04_Signal.cfg:453
 msgid "Oh, great..."
 msgstr ""
 
@@ -1299,7 +1302,6 @@ msgstr ""
 
 #. [message]: speaker=Bresda_
 #: Trinity/scenarios/3_H06_Reversal.cfg:143
-#: Trinity/scenarios/3_P07_Air.cfg:119
 msgid "Halt!"
 msgstr ""
 
@@ -1310,7 +1312,6 @@ msgstr ""
 
 #. [message]: speaker=Dardrus
 #: Trinity/scenarios/3_H06_Reversal.cfg:155
-#: Trinity/scenarios/3_P07_Air.cfg:131
 msgid ""
 "Stop!  He is with me, I employ him as a guide.  We have come to warn you of "
 "the Khthon onslaught coming from the east."
@@ -1318,25 +1319,21 @@ msgstr ""
 
 #. [message]: speaker=Haldrad
 #: Trinity/scenarios/3_H06_Reversal.cfg:159
-#: Trinity/scenarios/3_P07_Air.cfg:135
 msgid "(What are you talking about?)"
 msgstr ""
 
 #. [message]: speaker=Dardrus
 #: Trinity/scenarios/3_H06_Reversal.cfg:163
-#: Trinity/scenarios/3_P07_Air.cfg:139
 msgid "(Just trust me for now.  You have no choice...)"
 msgstr ""
 
 #. [message]: speaker=Bresda_
 #: Trinity/scenarios/3_H06_Reversal.cfg:168
-#: Trinity/scenarios/3_P07_Air.cfg:151
 msgid "You - you are one of the gods?"
 msgstr ""
 
 #. [message]: speaker=Dardrus
 #: Trinity/scenarios/3_H06_Reversal.cfg:172
-#: Trinity/scenarios/3_P07_Air.cfg:155
 msgid "Not exactly, but I am a friend.  Please take us to see your Goddess."
 msgstr ""
 
@@ -1431,83 +1428,83 @@ msgid "Glendora"
 msgstr ""
 
 #. [side]: type=Elvish Hero, id=Echidna, race=khthon
-#: Trinity/scenarios/3_K02_Elves.cfg:124 Trinity/scenarios/3_K01_Ship.cfg:212
+#: Trinity/scenarios/3_K02_Elves.cfg:124 Trinity/scenarios/3_K01_Ship.cfg:213
 msgid "Leggon"
 msgstr ""
 
 #. [message]: speaker=Witness
-#: Trinity/scenarios/3_K01_Ship.cfg:254
+#: Trinity/scenarios/3_K01_Ship.cfg:255
 msgid "What did I just see? Who are you!?"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K01_Ship.cfg:258
+#: Trinity/scenarios/3_K01_Ship.cfg:259
 msgid ""
 "You saw nothing. A human woman died out here, but I slid her into the water. "
 "Her image will not be spoiled, she will not be carrion."
 msgstr ""
 
 #. [message]: speaker=Witness
-#: Trinity/scenarios/3_K01_Ship.cfg:262
+#: Trinity/scenarios/3_K01_Ship.cfg:263
 msgid "Don't evade my question, who are you?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_K01_Ship.cfg:266
+#: Trinity/scenarios/3_K01_Ship.cfg:267
 msgid ""
 "Echidna had been in a hurry, not all information was at her disposal. Who "
 "was this elf? She did not know..."
 msgstr ""
 
 #. [message]: speaker=Witness
-#: Trinity/scenarios/3_K01_Ship.cfg:271
+#: Trinity/scenarios/3_K01_Ship.cfg:272
 msgid "Tough question, eh? Elves, be on guard! Leggon is not himself."
 msgstr ""
 
 #. [message]: speaker=Glendora
-#: Trinity/scenarios/3_K01_Ship.cfg:275
+#: Trinity/scenarios/3_K01_Ship.cfg:276
 msgid ""
 "I don't like this... Try to capture him alive, but do whatever is necessary."
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Trinity/scenarios/3_K01_Ship.cfg:297
+#: Trinity/scenarios/3_K01_Ship.cfg:298
 msgid "What are these beasts?"
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Trinity/scenarios/3_K01_Ship.cfg:311
+#: Trinity/scenarios/3_K01_Ship.cfg:312
 msgid "Leggon, please don't do this."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_K02_Elves.cfg:274 Trinity/scenarios/3_K01_Ship.cfg:315
+#: Trinity/scenarios/3_K02_Elves.cfg:274 Trinity/scenarios/3_K01_Ship.cfg:316
 msgid "I am not Leggon..."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K01_Ship.cfg:332
+#: Trinity/scenarios/3_K01_Ship.cfg:333
 msgid ""
 "That should be the last of them! There is something about these people, I "
 "wonder if..."
 msgstr ""
 
 #. [message]: speaker=Glendora
-#: Trinity/scenarios/3_K01_Ship.cfg:348
+#: Trinity/scenarios/3_K01_Ship.cfg:349
 msgid ""
 "I don't know who or what you are...  But you cannot triumph over the Elves..."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K02_Elves.cfg:536 Trinity/scenarios/3_K04_Storm.cfg:838
-#: Trinity/scenarios/3_K03_Lord.cfg:398 Trinity/scenarios/3_K01_Ship.cfg:359
+#: Trinity/scenarios/3_K02_Elves.cfg:536 Trinity/scenarios/3_K04_Storm.cfg:842
+#: Trinity/scenarios/3_K03_Lord.cfg:402 Trinity/scenarios/3_K01_Ship.cfg:360
 msgid ""
 "Ah, at least I had a second chance... Sadly, the cold-hearted demons will "
 "rule this world..."
 msgstr ""
 
 #. [message]
-#: Trinity/scenarios/3_K01_Ship.cfg:374
+#: Trinity/scenarios/3_K01_Ship.cfg:375
 msgid "Others have come to assist us, we'll extinguish this plague yet!"
 msgstr ""
 
@@ -1550,8 +1547,8 @@ msgstr ""
 #. [side]: type=Keldan, race=khthon, id=Keldan_
 #. [side]: type=Keldan, id=Keldan_a, race=khthon
 #: Trinity/scenarios/F1a_Onslaught.cfg:214
-#: Trinity/scenarios/3_K02_Elves.cfg:156 Trinity/scenarios/3_K04_Storm.cfg:266
-#: Trinity/scenarios/F2a_Air.cfg:145
+#: Trinity/scenarios/3_K02_Elves.cfg:156 Trinity/scenarios/3_K04_Storm.cfg:270
+#: Trinity/scenarios/F2a_Air.cfg:139 Trinity/scenarios/F3a_Phantom.cfg:162
 msgid "Keldan"
 msgstr ""
 
@@ -1650,14 +1647,14 @@ msgstr ""
 
 #. [objective]: condition=lose
 #: Trinity/scenarios/3_K02_Elves.cfg:337 Trinity/scenarios/3_K02_Elves.cfg:402
-#: Trinity/scenarios/3_K04_Storm.cfg:84 Trinity/scenarios/3_K04_Storm.cfg:782
-#: Trinity/scenarios/3_K03_Lord.cfg:40
+#: Trinity/scenarios/3_K04_Storm.cfg:84 Trinity/scenarios/3_K04_Storm.cfg:786
+#: Trinity/scenarios/3_K03_Lord.cfg:44
 msgid "Death of Echidna"
 msgstr ""
 
 #. [objective]: condition=lose
 #: Trinity/scenarios/3_K02_Elves.cfg:341 Trinity/scenarios/3_K02_Elves.cfg:406
-#: Trinity/scenarios/3_K03_Lord.cfg:44
+#: Trinity/scenarios/3_K04_Storm.cfg:88 Trinity/scenarios/3_K03_Lord.cfg:48
 msgid "Death of Keldan"
 msgstr ""
 
@@ -1725,11 +1722,16 @@ msgstr ""
 
 #. [objective]: condition=win
 #: Trinity/scenarios/3_K03_Lord.cfg:36
-msgid "Capture Ullien-Del (attack with Echidna) and defeat the humans"
+msgid "Capture Ullien-Del (attack with Echidna)"
+msgstr ""
+
+#. [objective]: condition=lose
+#: Trinity/scenarios/3_K03_Lord.cfg:40
+msgid "Ullien-Del reaches the safety of the human camp"
 msgstr ""
 
 #. [side]: type=Elvish High Lord, id=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:135 Trinity/scenarios/3_K03_Lord.cfg:82
+#: Trinity/scenarios/3_K04_Storm.cfg:139 Trinity/scenarios/3_K03_Lord.cfg:86
 msgid "Ullien-Del"
 msgstr ""
 
@@ -1738,82 +1740,82 @@ msgstr ""
 #. [unit_type]: id=Echidna, race=khthon
 #. [side]: type=Echidna-Mid, id=Echidna_a, race=khthon
 #. [side]: type=Echidna-Low, id=Echidna, race=khthon
-#: Trinity/units/Echidna-Mid.cfg:5 Trinity/units/Echidna-Low.cfg:7
+#: Trinity/units/Echidna-Mid.cfg:5 Trinity/units/Echidna-Low.cfg:8
 #: Trinity/units/Echidna.cfg:5 Trinity/scenarios/F1a_Onslaught.cfg:171
-#: Trinity/scenarios/3_K04_Storm.cfg:177 Trinity/scenarios/3_K03_Lord.cfg:146
+#: Trinity/scenarios/3_K04_Storm.cfg:181 Trinity/scenarios/3_K03_Lord.cfg:150
 msgid "Echidna"
 msgstr ""
 
 #. [side]: type=Lieutenant, id=Serhan
-#: Trinity/scenarios/3_K03_Lord.cfg:184
+#: Trinity/scenarios/3_K03_Lord.cfg:188
 msgid "Serhan"
 msgstr ""
 
 #. [message]: speaker=Serhan
-#: Trinity/scenarios/3_K03_Lord.cfg:216
+#: Trinity/scenarios/3_K03_Lord.cfg:220
 msgid ""
 "Good to see you, Lord Ullien-Del. The Queen asked us to escort you through "
 "the gates of Weldyn, as a courtesy."
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K03_Lord.cfg:220
+#: Trinity/scenarios/3_K03_Lord.cfg:224
 msgid ""
 "It was quite unnecessary, but I appreciate the gesture. We were just about "
 "to break camp, let us continue."
 msgstr ""
 
 #. [message]: speaker=Keldan
-#: Trinity/scenarios/3_K03_Lord.cfg:227
+#: Trinity/scenarios/3_K03_Lord.cfg:231
 msgid "Lord Ullien-Del! Halt!"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K03_Lord.cfg:236
+#: Trinity/scenarios/3_K03_Lord.cfg:240
 msgid "Keldan! What are you doing here?"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K03_Lord.cfg:240
+#: Trinity/scenarios/3_K03_Lord.cfg:244
 msgid "He is with me. We have you surrounded. Surrender."
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K03_Lord.cfg:244
+#: Trinity/scenarios/3_K03_Lord.cfg:248
 msgid "Surrender? What is the meaning of this!"
 msgstr ""
 
 #. [message]: speaker=Serhan
-#: Trinity/scenarios/3_K03_Lord.cfg:248
+#: Trinity/scenarios/3_K03_Lord.cfg:252
 msgid ""
 "It seems we are needed after all...  Lord Ullien-Del, make your way here to "
 "safety!"
 msgstr ""
 
 #. [message]: speaker=Elf1
-#: Trinity/scenarios/3_K03_Lord.cfg:252
+#: Trinity/scenarios/3_K03_Lord.cfg:256
 msgid "We will protect you, Lord Ullien-Del."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K03_Lord.cfg:360
+#: Trinity/scenarios/3_K03_Lord.cfg:364
 msgid ""
 "(Ha!  I got him.)  We will fall back, but you will continue onward to your "
 "friends.  Just act natural..."
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K03_Lord.cfg:364
+#: Trinity/scenarios/3_K03_Lord.cfg:368
 msgid "Yes..."
 msgstr ""
 
 #. [message]: speaker=Serhan
-#: Trinity/scenarios/3_K03_Lord.cfg:369 Trinity/scenarios/3_K03_Lord.cfg:384
+#: Trinity/scenarios/3_K03_Lord.cfg:373 Trinity/scenarios/3_K03_Lord.cfg:388
 msgid "Welcome, Lord Ullien-Del.  The other Advisors are expecting you."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K03_Lord.cfg:411
+#: Trinity/scenarios/3_K03_Lord.cfg:415
 msgid "We don't know where to go, the conference will go on without us..."
 msgstr ""
 
@@ -1832,79 +1834,79 @@ msgid ""
 msgstr ""
 
 #. [objective]: condition=win
-#: Trinity/scenarios/3_P05_Landing.cfg:326
-#: Trinity/scenarios/3_P05_Landing.cfg:400
-#: Trinity/scenarios/3_K04_Storm.cfg:80 Trinity/scenarios/3_K04_Storm.cfg:778
+#: Trinity/scenarios/3_P05_Landing.cfg:315
+#: Trinity/scenarios/3_P05_Landing.cfg:389
+#: Trinity/scenarios/3_K04_Storm.cfg:80 Trinity/scenarios/3_K04_Storm.cfg:782
 #: Trinity/scenarios/3_P01_Village.cfg:54
 msgid "Defeat Enemy Leaders"
 msgstr ""
 
 #. [objectives]
-#: Trinity/scenarios/3_K04_Storm.cfg:86
+#: Trinity/scenarios/3_K04_Storm.cfg:90
 msgid ""
 "Move Echidna past the southern region of the outer moat to get Ullien-Del to "
 "play his part."
 msgstr ""
 
 #. [side]: type=Lieutenant, id=Stahl
-#: Trinity/scenarios/3_K04_Storm.cfg:199
+#: Trinity/scenarios/3_K04_Storm.cfg:203
 msgid "Stahl"
 msgstr ""
 
 #. [side]: type=General, id=Daenyr
-#: Trinity/scenarios/3_K04_Storm.cfg:231
+#: Trinity/scenarios/3_K04_Storm.cfg:235
 msgid "Daenyr"
 msgstr ""
 
 #. [side]: type=Mage of Light, id=Saleanna
-#: Trinity/scenarios/3_K04_Storm.cfg:285
+#: Trinity/scenarios/3_K04_Storm.cfg:289
 msgid "Saleanna"
 msgstr ""
 
 #. [side]: type=Great Mage, id=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:319
+#: Trinity/scenarios/3_K04_Storm.cfg:323
 msgid "Minister Ryaeron"
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:359
+#: Trinity/scenarios/3_K04_Storm.cfg:363
 msgid "Good to see you, Lord Ullien-Del!  Come in and set up camp!"
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:366
+#: Trinity/scenarios/3_K04_Storm.cfg:370
 msgid ""
 "Now we just need to wait for Haldrad and old man Dolevan.  Can I offer you "
 "some plums?"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:370
+#: Trinity/scenarios/3_K04_Storm.cfg:374
 msgid "No, thank you..."
 msgstr ""
 
 #. [message]: speaker=Stahl
-#: Trinity/scenarios/3_K04_Storm.cfg:374
+#: Trinity/scenarios/3_K04_Storm.cfg:378
 msgid "What are those forces in the woods?"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:383
+#: Trinity/scenarios/3_K04_Storm.cfg:387
 msgid "Them?  I thought we'd driven them off..."
 msgstr ""
 
 #. [message]: speaker=Saleanna
-#: Trinity/scenarios/3_K04_Storm.cfg:389
+#: Trinity/scenarios/3_K04_Storm.cfg:393
 msgid "Some look like elves, but there is something wrong with them..."
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:393
+#: Trinity/scenarios/3_K04_Storm.cfg:397
 msgid "You look a little off, Ullien-Del. Are you feeling well?"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:397
+#: Trinity/scenarios/3_K04_Storm.cfg:401
 msgid ""
 "Yes... We were attacked by those forces, it was quite harrowing, but your "
 "Officer Serhan saved me.  I will do everything I can to help you drive off "
@@ -1912,33 +1914,33 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:401
+#: Trinity/scenarios/3_K04_Storm.cfg:405
 msgid ""
 "(Our guest is in position, but I need to get closer.  Distract them, Keldan, "
 "so that I can remind the High Lord of his duty...)"
 msgstr ""
 
 #. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_K04_Storm.cfg:405
+#: Trinity/scenarios/3_K04_Storm.cfg:409
 msgid "(Understood...)"
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:442
+#: Trinity/scenarios/3_K04_Storm.cfg:446
 msgid ""
 "What is going on?  These foul beasts are not undead, but they are just as "
 "low."
 msgstr ""
 
 #. [message]: speaker=Daenyr
-#: Trinity/scenarios/3_K04_Storm.cfg:446
+#: Trinity/scenarios/3_K04_Storm.cfg:450
 msgid ""
 "Don't let Dolevan hear you say that.  I'd never liked having that "
 "Necromancer around, so I took precautions..."
 msgstr ""
 
 #. [message]: speaker=Daenyr
-#: Trinity/scenarios/3_K04_Storm.cfg:450
+#: Trinity/scenarios/3_K04_Storm.cfg:454
 msgid ""
 "We'll see if these beasts have the vulnerabilities of the undead - I'm "
 "releasing my reserve of that special oil, with which all of my soldiers will "
@@ -1946,91 +1948,91 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:552
+#: Trinity/scenarios/3_K04_Storm.cfg:556
 msgid "Now, when these Haldrad and Dolevan get back, we'll... welcome them."
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:556
+#: Trinity/scenarios/3_K04_Storm.cfg:560
 msgid "Dan Tonk..."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:560
+#: Trinity/scenarios/3_K04_Storm.cfg:564
 msgid "What is 'Dan Tonk'?"
 msgstr ""
 
 #. [message]: speaker=Saleanna
-#: Trinity/scenarios/3_K04_Storm.cfg:564
+#: Trinity/scenarios/3_K04_Storm.cfg:568
 msgid "Silence, Ryaeron!"
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:568
+#: Trinity/scenarios/3_K04_Storm.cfg:572
 msgid "... (mumble) ..."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:572
+#: Trinity/scenarios/3_K04_Storm.cfg:576
 msgid ""
 "Does not matter. Once we have secured this nest, we will figure that out. "
 "For now, I am happy to have found one with such energy and power!"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:586
+#: Trinity/scenarios/3_K04_Storm.cfg:590
 msgid "Now, dance!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_K04_Storm.cfg:593
+#: Trinity/scenarios/3_K04_Storm.cfg:597
 msgid ""
 "Ullien-Del felt a strange sense of purpose and turned his gaze to the "
 "defending leaders...  Who needs to be removed?"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: Trinity/scenarios/3_K04_Storm.cfg:595
+#: Trinity/scenarios/3_K04_Storm.cfg:599
 msgid "Mage Saleanna"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:599
+#: Trinity/scenarios/3_K04_Storm.cfg:603
 msgid ""
 "Why didn't I see this sooner?  Mage Saleanna!  There is something you need "
 "to know!"
 msgstr ""
 
 #. [message]: speaker=Saleanna
-#: Trinity/scenarios/3_K04_Storm.cfg:603
+#: Trinity/scenarios/3_K04_Storm.cfg:607
 msgid "What is it?  Approach."
 msgstr ""
 
 #. [message]: speaker=Saleanna
 #. [message]: speaker=Daenyr
-#: Trinity/scenarios/3_K04_Storm.cfg:608 Trinity/scenarios/3_K04_Storm.cfg:689
+#: Trinity/scenarios/3_K04_Storm.cfg:612 Trinity/scenarios/3_K04_Storm.cfg:693
 msgid "Well?"
 msgstr ""
 
 #. [option]: speaker=narrator
-#: Trinity/scenarios/3_K04_Storm.cfg:676
+#: Trinity/scenarios/3_K04_Storm.cfg:680
 msgid "General Daenyr"
 msgstr ""
 
 #. [message]: speaker=Ullien-Del
-#: Trinity/scenarios/3_K04_Storm.cfg:680
+#: Trinity/scenarios/3_K04_Storm.cfg:684
 msgid ""
 "Why didn't I see this sooner?  General Daenyr!  There is something you need "
 "to know!"
 msgstr ""
 
 #. [message]: speaker=Daenyr
-#: Trinity/scenarios/3_K04_Storm.cfg:684
+#: Trinity/scenarios/3_K04_Storm.cfg:688
 msgid "What is it?"
 msgstr ""
 
 #. [message]: speaker=Ryaeron
-#: Trinity/scenarios/3_K04_Storm.cfg:764
+#: Trinity/scenarios/3_K04_Storm.cfg:768
 msgid ""
 "It is well that the others were not here, never before have I faced such an "
 "enemy...  No sense of honour, no sense of self...  There will be no "
@@ -2038,31 +2040,31 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:768
+#: Trinity/scenarios/3_K04_Storm.cfg:772
 msgid "(There are others...  I need to find out what he knows.)"
 msgstr ""
 
 #. [objective]: condition=win
-#: Trinity/scenarios/3_K04_Storm.cfg:774
+#: Trinity/scenarios/3_K04_Storm.cfg:778
 msgid "Interrogate (attack) Ryaeron with Echidna"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:818
+#: Trinity/scenarios/3_K04_Storm.cfg:822
 msgid ""
 "That'll do it. Clear the bodies, we don't want the other ones to become "
 "suspicious."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Trinity/scenarios/3_K04_Storm.cfg:852
+#: Trinity/scenarios/3_K04_Storm.cfg:856
 msgid ""
 "I've gained power, but I still need an agent who could pass as one of the "
 "natives..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_K04_Storm.cfg:866
+#: Trinity/scenarios/3_K04_Storm.cfg:870
 msgid ""
 "You will not gain the crown - the queen is not here. You've gained nothing..."
 msgstr ""
@@ -2263,8 +2265,8 @@ msgstr ""
 
 #. [objective]: condition=lose
 #: Trinity/scenarios/3_P05_Landing.cfg:65
-#: Trinity/scenarios/3_P05_Landing.cfg:330
-#: Trinity/scenarios/3_P05_Landing.cfg:404
+#: Trinity/scenarios/3_P05_Landing.cfg:319
+#: Trinity/scenarios/3_P05_Landing.cfg:393
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:43
 #: Trinity/scenarios/3_P01_Village.cfg:58
 #: Trinity/scenarios/3_P02_Entrance.cfg:36 Trinity/scenarios/3_P03_Cave.cfg:57
@@ -2281,14 +2283,16 @@ msgid "Death of Ponce"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Trinity/scenarios/F1a_Onslaught.cfg:52
+#: Trinity/scenarios/F5a_Destroyer.cfg:48
+#: Trinity/scenarios/F1a_Onslaught.cfg:52 Trinity/scenarios/F4a_Hera.cfg:64
 #: Trinity/scenarios/3_P05_Landing.cfg:69
-#: Trinity/scenarios/3_P05_Landing.cfg:334
-#: Trinity/scenarios/3_P05_Landing.cfg:408
+#: Trinity/scenarios/3_P05_Landing.cfg:323
+#: Trinity/scenarios/3_P05_Landing.cfg:397
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:47
 #: Trinity/scenarios/3_P01_Village.cfg:66
 #: Trinity/scenarios/3_P02_Entrance.cfg:40 Trinity/scenarios/3_P03_Cave.cfg:49
-#: Trinity/scenarios/F2a_Air.cfg:75 Trinity/scenarios/3_P04_Engine.cfg:51
+#: Trinity/scenarios/F2a_Air.cfg:71 Trinity/scenarios/F3a_Phantom.cfg:58
+#: Trinity/scenarios/3_P04_Engine.cfg:51
 msgid "Death of Bresda"
 msgstr ""
 
@@ -2308,12 +2312,14 @@ msgid "Izara"
 msgstr ""
 
 #. [side]: type=Primeval Nemesis-low, id=Nemesis
-#: Trinity/scenarios/F1a_Onslaught.cfg:197
+#: Trinity/scenarios/F5a_Destroyer.cfg:145
+#: Trinity/scenarios/F1a_Onslaught.cfg:197 Trinity/scenarios/F4a_Hera.cfg:160
 #: Trinity/scenarios/3_P05_Landing.cfg:133
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:161
 #: Trinity/scenarios/3_P01_Village.cfg:160
 #: Trinity/scenarios/3_P02_Entrance.cfg:167
-#: Trinity/scenarios/3_P03_Cave.cfg:196 Trinity/scenarios/F2a_Air.cfg:182
+#: Trinity/scenarios/3_P03_Cave.cfg:196 Trinity/scenarios/F2a_Air.cfg:176
+#: Trinity/scenarios/F3a_Phantom.cfg:187
 #: Trinity/scenarios/3_P04_Engine.cfg:176
 msgid "Nemesis"
 msgstr ""
@@ -2430,7 +2436,7 @@ msgstr ""
 #. [message]: speaker=Bresda
 #. [message]: speaker=Echidna_a
 #: Trinity/scenarios/3_P01_Village.cfg:381
-#: Trinity/scenarios/3_P03_Cave.cfg:580 Trinity/scenarios/F2a_Air.cfg:315
+#: Trinity/scenarios/3_P03_Cave.cfg:572 Trinity/scenarios/F2a_Air.cfg:317
 msgid "No!"
 msgstr ""
 
@@ -2600,8 +2606,6 @@ msgid "Yes, fight fire with fire!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_P05_Landing.cfg:302
-#: Trinity/scenarios/3_P05_Landing.cfg:417
 #: Trinity/scenarios/3_P02_Entrance.cfg:249
 msgid "You can now recruit Arsonists."
 msgstr ""
@@ -2730,171 +2734,171 @@ msgid "Methalas"
 msgstr ""
 
 #. [message]
-#: Trinity/scenarios/3_P03_Cave.cfg:225
+#: Trinity/scenarios/3_P03_Cave.cfg:217
 msgid ""
 "It looks like this tunnel was carved out more recently than the earlier one."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:229
+#: Trinity/scenarios/3_P03_Cave.cfg:221
 msgid "Yes... I don't like this, but let us see where it leads."
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:233
+#: Trinity/scenarios/3_P03_Cave.cfg:225
 msgid "I hear voices, we have company..."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P03_Cave.cfg:237
+#: Trinity/scenarios/3_P03_Cave.cfg:229
 msgid "Sounds like a dwarf."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:241
+#: Trinity/scenarios/3_P03_Cave.cfg:233
 msgid ""
 "What's a 'dwarf'? That name doesn't sound familiar. But they are intruders."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:253
+#: Trinity/scenarios/3_P03_Cave.cfg:245
 msgid "This abandoned camp gives us a place to gather..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:269
+#: Trinity/scenarios/3_P03_Cave.cfg:261
 msgid "Dwarf mining operation! That would explain things!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:273
+#: Trinity/scenarios/3_P03_Cave.cfg:265
 msgid "How does that explain 'things'?"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:277
+#: Trinity/scenarios/3_P03_Cave.cfg:269
 msgid "They are carving out the metals and ores in this earth-"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:281
+#: Trinity/scenarios/3_P03_Cave.cfg:273
 msgid "Carving out metals!?"
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:285
+#: Trinity/scenarios/3_P03_Cave.cfg:277
 msgid "Of course, this ground is full of veins of copper!"
 msgstr ""
 
 #. [message]: speaker=Methalas
-#: Trinity/scenarios/3_P03_Cave.cfg:289
+#: Trinity/scenarios/3_P03_Cave.cfg:281
 msgid "Be silent, Aitel!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:293
+#: Trinity/scenarios/3_P03_Cave.cfg:285
 msgid "(I need to interrogate the loose-lipped leader...)"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:311
+#: Trinity/scenarios/3_P03_Cave.cfg:303
 msgid "What is THAT?"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:321
+#: Trinity/scenarios/3_P03_Cave.cfg:313
 msgid "Where did you get that?"
 msgstr ""
 
 #. [message]: speaker=Methalas
-#: Trinity/scenarios/3_P03_Cave.cfg:325
+#: Trinity/scenarios/3_P03_Cave.cfg:317
 msgid "We found it... Why should I tell you?"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:329
+#: Trinity/scenarios/3_P03_Cave.cfg:321
 msgid ""
 "You didn't just pull metal out of the wall, you plundered the dead! That's "
 "what the other one meant by 'live one'!"
 msgstr ""
 
 #. [message]: speaker=Methalas
-#: Trinity/scenarios/3_P03_Cave.cfg:333
+#: Trinity/scenarios/3_P03_Cave.cfg:325
 msgid "There were dead, but-"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:337
+#: Trinity/scenarios/3_P03_Cave.cfg:329
 msgid ""
 "CEASE YOUR NOISE! All of your kind will be a sacrifice to the wronged souls "
 "of the dead! Not one of you shall leave this cave!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:355
+#: Trinity/scenarios/3_P03_Cave.cfg:347
 msgid "Flooding... That is a bad sign..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:359
+#: Trinity/scenarios/3_P03_Cave.cfg:351
 msgid "It looks like there was a bridge, but it has been destroyed."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:363
+#: Trinity/scenarios/3_P03_Cave.cfg:355
 msgid ""
 "The floodwater is deep, but there are a couple of large rocks on the other "
 "side."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:380
+#: Trinity/scenarios/3_P03_Cave.cfg:372
 msgid "I wonder..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:393 Trinity/scenarios/3_P03_Cave.cfg:421
+#: Trinity/scenarios/3_P03_Cave.cfg:385 Trinity/scenarios/3_P03_Cave.cfg:413
 msgid "(Grmph!)"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:408 Trinity/scenarios/3_P03_Cave.cfg:436
+#: Trinity/scenarios/3_P03_Cave.cfg:400 Trinity/scenarios/3_P03_Cave.cfg:428
 msgid "A way for the others to cross..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:449
+#: Trinity/scenarios/3_P03_Cave.cfg:441
 msgid ""
 "This looks like some sort of workshop for forging the metal into ingots for "
 "transport..."
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:461
+#: Trinity/scenarios/3_P03_Cave.cfg:453
 msgid "Ah, I guess I'll never get back to Knalga, for now I die."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:465
+#: Trinity/scenarios/3_P03_Cave.cfg:457
 msgid "Don't be silly, think not of death...  Now what are you doing here?"
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:469
+#: Trinity/scenarios/3_P03_Cave.cfg:461
 msgid ""
 "We're taking copper out of the walls, this place is loaded with it! It'll be "
 "worth a fortune if we can get it back to the Continent!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:473
+#: Trinity/scenarios/3_P03_Cave.cfg:465
 msgid ""
 "How much copper have you taken? What else have you done here, aside from "
 "destroy the copper web?"
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:477
+#: Trinity/scenarios/3_P03_Cave.cfg:469
 msgid ""
 "There was a small chamber with jewels. It almost looked like it would be "
 "magical, like it served some purpose, but there were no runes. I'll split it "
@@ -2902,30 +2906,30 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:481
+#: Trinity/scenarios/3_P03_Cave.cfg:473
 msgid ""
 "You destroyed...ARGH! (How many died because of this little rat's actions?)"
 msgstr ""
 
 #. [message]: speaker=Aitel
-#: Trinity/scenarios/3_P03_Cave.cfg:485
+#: Trinity/scenarios/3_P03_Cave.cfg:477
 msgid "Ow! You said you wouldn't kill me."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:489
+#: Trinity/scenarios/3_P03_Cave.cfg:481
 msgid "I never said any such thing!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:505
+#: Trinity/scenarios/3_P03_Cave.cfg:497
 msgid ""
 "The greed and ... audacity of the little hairy ones seals their fate, kill "
 "them all!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:528
+#: Trinity/scenarios/3_P03_Cave.cfg:520
 msgid ""
 "Death was too pleasant a fate for them, but there were few options "
 "available. Behind the great stone slab is a tomb for those who were killed "
@@ -2933,32 +2937,32 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: Trinity/scenarios/3_P03_Cave.cfg:547
+#: Trinity/scenarios/3_P03_Cave.cfg:539
 msgid "It's a live one!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P03_Cave.cfg:551
+#: Trinity/scenarios/3_P03_Cave.cfg:543
 msgid "What do you mean?"
 msgstr ""
 
 #. [message]: speaker=Methalas
-#: Trinity/scenarios/3_P03_Cave.cfg:555
+#: Trinity/scenarios/3_P03_Cave.cfg:547
 msgid "Don't answer, $second_unit.name|!"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/3_P03_Cave.cfg:566
+#: Trinity/scenarios/3_P03_Cave.cfg:558
 msgid "If only ..."
 msgstr ""
 
 #. [message]: speaker=Ponce
-#: Trinity/scenarios/3_P03_Cave.cfg:594
+#: Trinity/scenarios/3_P03_Cave.cfg:586
 msgid "Bresda!"
 msgstr ""
 
 #. [message]
-#: Trinity/scenarios/3_P03_Cave.cfg:609
+#: Trinity/scenarios/3_P03_Cave.cfg:601
 msgid ""
 "A fresh supply of miners have arrived, and none too soon. We'll show these "
 "harpies!"
@@ -3032,7 +3036,7 @@ msgstr ""
 #. [message]: speaker=Nemesis
 #: Trinity/scenarios/3_P04_Engine.cfg:192
 msgid ""
-"This is the Engine Room, all accessable parts of this structure's Engine are "
+"This is the Engine Room, all accessible parts of this structure's Engine are "
 "here-"
 msgstr ""
 
@@ -3058,7 +3062,7 @@ msgstr ""
 #. [message]: speaker=Brunin
 #: Trinity/scenarios/3_P04_Engine.cfg:208
 msgid ""
-"You are not going anywhere!  Brutal killers such as yourslves belong at the "
+"You are not going anywhere!  Brutal killers such as yourselves belong at the "
 "bottom of the sea."
 msgstr ""
 
@@ -3083,6 +3087,7 @@ msgid "We shall destroy all who damage our Engine!"
 msgstr ""
 
 #. [unit_type]: id=Trinity Cannon, race=human
+#. [unit_type]: id=Primeval Chariot, race=primeval
 #. [unit_type]: id=Echidna-Mid, race=khthon
 #. [unit_type]: id=South-Seas Pirate, race=south-seas_human
 #. [unit_type]: id=South-Seas Corsair, race=south-seas_human
@@ -3093,13 +3098,15 @@ msgstr ""
 #. [unit_type]: id=Termagant, race=south-seas_human
 #. [unit_type]: id=Virago, race=south-seas_human
 #. [unit_type]: id=Primevalist Heroine, race=south-seas_human
+#. [message]: speaker=Dardrus
 #. [message]: speaker=Ponce
-#: Trinity/units/Cannon.cfg:22 Trinity/units/Echidna-Mid.cfg:20
-#: Trinity/units/Ponce.cfg:30 Trinity/units/Ponce.cfg:124
-#: Trinity/units/Ponce.cfg:224 Trinity/units/Echidna-Low.cfg:22
-#: Trinity/units/Sea-Monsters.cfg:25 Trinity/units/Bresda.cfg:24
-#: Trinity/units/Bresda.cfg:93 Trinity/units/Bresda.cfg:184
-#: Trinity/units/Bresda.cfg:271 Trinity/scenarios/3_P04_Engine.cfg:228
+#: Trinity/units/Cannon.cfg:22 Trinity/units/Chariot.cfg:39
+#: Trinity/units/Echidna-Mid.cfg:21 Trinity/units/Ponce.cfg:30
+#: Trinity/units/Ponce.cfg:124 Trinity/units/Ponce.cfg:224
+#: Trinity/units/Echidna-Low.cfg:24 Trinity/units/Sea-Monsters.cfg:25
+#: Trinity/units/Bresda.cfg:24 Trinity/units/Bresda.cfg:93
+#: Trinity/units/Bresda.cfg:184 Trinity/units/Bresda.cfg:271
+#: Trinity/scenarios/F4a_Hera.cfg:466 Trinity/scenarios/3_P04_Engine.cfg:228
 msgid "..."
 msgstr ""
 
@@ -3223,7 +3230,7 @@ msgid "This island really has been over-run by reptiles."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:519
+#: Trinity/scenarios/3_P05_Landing.cfg:500
 #: Trinity/scenarios/3_P04p2_Blockage.cfg:368
 #: Trinity/scenarios/3_P04_Engine.cfg:405
 msgid "How could this happen..."
@@ -3483,24 +3490,24 @@ msgid "To gain control of the docks, just capture the fancy villages."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:231
+#: Trinity/scenarios/3_P05_Landing.cfg:232
 msgid "I can see lights of a city..."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:236
+#: Trinity/scenarios/3_P05_Landing.cfg:237
 msgid "And I think I see figures."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:240
+#: Trinity/scenarios/3_P05_Landing.cfg:241
 msgid ""
 "That city is in the way, but we really need to keep moving east and that "
 "river looks like it should be large enough for us to continue inland."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_P05_Landing.cfg:244
+#: Trinity/scenarios/3_P05_Landing.cfg:245
 msgid ""
 "As if on cue, a brass sparrow flew up to Nemesis and landed on her "
 "outstretched hand.  Bresda and the sailors heard a tinny melody, but Nemesis "
@@ -3508,94 +3515,87 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:249
+#: Trinity/scenarios/3_P05_Landing.cfg:250
 msgid ""
 "Yes, we must head inland, and we must wrest control of this city from those "
 "coming to intercept us."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:253
+#: Trinity/scenarios/3_P05_Landing.cfg:254
 msgid "Alright, you heard her!  To arms!"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Trinity/scenarios/3_P05_Landing.cfg:257
+#: Trinity/scenarios/3_P05_Landing.cfg:258
 msgid ""
 "The defenses of Elensefar include artillary that will kill any unit that "
 "does not move out of the cross-hairs."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:290
-#: Trinity/scenarios/3_P05_Landing.cfg:376
+#: Trinity/scenarios/3_P05_Landing.cfg:291
+#: Trinity/scenarios/3_P05_Landing.cfg:365
 msgid "We have control of a landing point!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:294
-#: Trinity/scenarios/3_P05_Landing.cfg:380
+#: Trinity/scenarios/3_P05_Landing.cfg:295
+#: Trinity/scenarios/3_P05_Landing.cfg:369
 msgid "Very good.  Let us set up a camp there."
 msgstr ""
 
-#. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:298
-msgid ""
-"If we do not need to get into the water, we can have dry fuel for our "
-"Arsonists."
-msgstr ""
-
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:320
-#: Trinity/scenarios/3_P05_Landing.cfg:394
+#: Trinity/scenarios/3_P05_Landing.cfg:309
+#: Trinity/scenarios/3_P05_Landing.cfg:383
 msgid ""
 "Now we take control of their castle.  Bring the sceptre of their leader to "
 "me."
 msgstr ""
 
 #. [message]: speaker=Caldera
-#: Trinity/scenarios/3_P05_Landing.cfg:343
-#: Trinity/scenarios/3_P05_Landing.cfg:425
+#: Trinity/scenarios/3_P05_Landing.cfg:332
+#: Trinity/scenarios/3_P05_Landing.cfg:406
 msgid "The people of Wesnoth are not easily defeated, intruders!"
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:442
+#: Trinity/scenarios/3_P05_Landing.cfg:423
 msgid "We are defeating them!"
 msgstr ""
 
 #. [message]: speaker=Faro
-#: Trinity/scenarios/3_P05_Landing.cfg:453
+#: Trinity/scenarios/3_P05_Landing.cfg:434
 msgid ""
 "I don't regret trying to defend the city, they have helped us in the past."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:457
+#: Trinity/scenarios/3_P05_Landing.cfg:438
 msgid "How touching...  Now that's enough out of you."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/3_P05_Landing.cfg:473
+#: Trinity/scenarios/3_P05_Landing.cfg:454
 msgid "We've defeated their Queen!  We have the sceptre!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:477
+#: Trinity/scenarios/3_P05_Landing.cfg:458
 msgid ""
 "Don't kill her.  We may need high-value hostages, depending upon how strong "
 "the rest of their forces are..."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:493
+#: Trinity/scenarios/3_P05_Landing.cfg:474
 msgid ""
 "I feel as strong as my old self...  We should think about heading east, but "
 "let us consolidate our triumph first..."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:497
+#: Trinity/scenarios/3_P05_Landing.cfg:478
 msgid ""
 "The defeated people should know that we do not hold grudges, and anyone "
 "willing to join us is welcome.  Just set aside your previous understandings, "
@@ -3603,93 +3603,24 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Caldera
-#: Trinity/scenarios/3_P05_Landing.cfg:501
+#: Trinity/scenarios/3_P05_Landing.cfg:482
 msgid "Never!"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:505
+#: Trinity/scenarios/3_P05_Landing.cfg:486
 msgid "You are no longer the leader of your people.  This talk is over."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:533
+#: Trinity/scenarios/3_P05_Landing.cfg:514
 msgid "I should have taken better care..."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Trinity/scenarios/3_P05_Landing.cfg:548
+#: Trinity/scenarios/3_P05_Landing.cfg:529
 msgid ""
 "There is something wrong, I think I see Khthon.  Echidna has taken control..."
-msgstr ""
-
-#. [scenario]: id=3_P06
-#: Trinity/scenarios/3_P07_Air.cfg:6
-msgid "Air"
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:22
-msgid ""
-"With her wings restored, Nemesis could move quickly over the great distance "
-"to where she thought the last Pantheon structure would be."
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:26
-msgid ""
-"From the ground, it would have been difficult to detect.  But from the air, "
-"there was no mistaking the triangular shape.  She landed in the centre of "
-"the shape, and did not have to search long before she found loose rocks "
-"hiding an entrance."
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:30
-msgid ""
-"With the power of the Gem from the Sceptre, she was able to bring the "
-"structure's system back to life.  Because she wanted to secure her power, "
-"she did not unlock the chambers holding her sleeping fellows..."
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:34
-msgid ""
-"But as she steered the entire stucture into the sky, she had a fairly good "
-"idea of who was behind the stone slab.  Now, she would go back to Elensefar "
-"and the sea-going structure."
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:38
-msgid ""
-"From her vantage point in the sky, Nemesis could see stormclouds gathering "
-"in an oddly isolated column.  She steered around it and continued on to the "
-"coast.  When the city was in her shadow, she stopped the sky structure and "
-"flew down to her terrified followers."
-msgstr ""
-
-#. [part]
-#: Trinity/scenarios/3_P07_Air.cfg:42
-msgid "This is campaign is still under construction, this is all for now."
-msgstr ""
-
-#. [message]: speaker=Bresda_
-#: Trinity/scenarios/3_P07_Air.cfg:124
-msgid "(He looks like he is with the defeated Queen.  Arrest him!)"
-msgstr ""
-
-#. [message]: speaker=Bresda_
-#: Trinity/scenarios/3_P07_Air.cfg:159
-msgid "...  Come with me!"
-msgstr ""
-
-#. [message]: speaker=Keldan_
-#: Trinity/scenarios/3_P07_Air.cfg:180
-msgid ""
-"<i>The human forces are allied with the red-eyed bastards, this city must be "
-"a stronghold...  If we can slip to the north of the city, they will be "
-"between us and the evil on our tails...</i>"
 msgstr ""
 
 #. [scenario]: id=F1a
@@ -3775,100 +3706,102 @@ msgstr ""
 
 #. [message]: speaker=Bresda
 #: Trinity/scenarios/F1a_Onslaught.cfg:358
-#: Trinity/scenarios/F1a_Onslaught.cfg:483 Trinity/scenarios/F2a_Air.cfg:346
-#: Trinity/scenarios/F2a_Air.cfg:471
+#: Trinity/scenarios/F1a_Onslaught.cfg:483
 msgid "They've reached our supplies... "
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F1a_Onslaught.cfg:362 Trinity/scenarios/F2a_Air.cfg:350
+#: Trinity/scenarios/F1a_Onslaught.cfg:362
 msgid ""
 "Burn and foul the grains, kill anyone you find!  We have broken the enemy's "
 "spine."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Trinity/scenarios/F1a_Onslaught.cfg:366 Trinity/scenarios/F2a_Air.cfg:354
+#: Trinity/scenarios/F1a_Onslaught.cfg:366
 msgid "Yes ... "
 msgstr ""
 
 #. [message]: speaker=Haldrad
 #: Trinity/scenarios/F1a_Onslaught.cfg:370
-#: Trinity/scenarios/F1a_Onslaught.cfg:495 Trinity/scenarios/F2a_Air.cfg:358
-#: Trinity/scenarios/F2a_Air.cfg:483
+#: Trinity/scenarios/F1a_Onslaught.cfg:495
 msgid "We are done for..."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:386 Trinity/scenarios/F2a_Air.cfg:374
+#: Trinity/scenarios/F1a_Onslaught.cfg:386
 msgid ""
 "They are closing in, I hope the winged one gets back soon...  (At least, I "
 "think I do.)"
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/F1a_Onslaught.cfg:390 Trinity/scenarios/F2a_Air.cfg:378
+#: Trinity/scenarios/F1a_Onslaught.cfg:390
 msgid "Remember that I am immune to the spell of the enemy."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:427 Trinity/scenarios/F2a_Air.cfg:415
+#: Trinity/scenarios/F1a_Onslaught.cfg:427
 msgid "There was some mention of prisoners earlier.  Who would they be?"
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/F1a_Onslaught.cfg:431 Trinity/scenarios/F2a_Air.cfg:419
+#: Trinity/scenarios/F1a_Onslaught.cfg:431
 msgid "What business is it of yours?  Dardrus, your squire is very nosy..."
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/F1a_Onslaught.cfg:435 Trinity/scenarios/F2a_Air.cfg:423
+#: Trinity/scenarios/F1a_Onslaught.cfg:435
 msgid ""
 "I...  I think he is wondering if we could buy time by handing the prisoners "
 "over to the Khthon..."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:439 Trinity/scenarios/F2a_Air.cfg:427
+#: Trinity/scenarios/F1a_Onslaught.cfg:439
 msgid ""
 "No!  I was merely wondering if they could help us fight, they have just as "
 "much to lose as we do."
 msgstr ""
 
 #. [message]: speaker=Bresda
-#: Trinity/scenarios/F1a_Onslaught.cfg:443 Trinity/scenarios/F2a_Air.cfg:431
+#: Trinity/scenarios/F1a_Onslaught.cfg:443
 msgid "That is not for us to decide."
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/F1a_Onslaught.cfg:447 Trinity/scenarios/F2a_Air.cfg:435
+#: Trinity/scenarios/F1a_Onslaught.cfg:447
 msgid ""
 "I agree, we should just make sure the enemy doesn't get us or get into the "
 "central keep."
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F1a_Onslaught.cfg:487 Trinity/scenarios/F2a_Air.cfg:475
+#: Trinity/scenarios/F1a_Onslaught.cfg:487
 msgid "Ha!  We win, you lose.  Now, where is my old nemesis?"
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/F1a_Onslaught.cfg:491 Trinity/scenarios/F2a_Air.cfg:479
+#: Trinity/scenarios/F1a_Onslaught.cfg:491
 msgid "Not here, unfortunatly for us."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:509 Trinity/scenarios/F2a_Air.cfg:497
+#: Trinity/scenarios/F5a_Destroyer.cfg:434
+#: Trinity/scenarios/F1a_Onslaught.cfg:509 Trinity/scenarios/F4a_Hera.cfg:480
+#: Trinity/scenarios/F3a_Phantom.cfg:551
 msgid "Oh, what a world..."
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:523 Trinity/scenarios/F2a_Air.cfg:511
+#: Trinity/scenarios/F5a_Destroyer.cfg:448
+#: Trinity/scenarios/F1a_Onslaught.cfg:523 Trinity/scenarios/F4a_Hera.cfg:494
+#: Trinity/scenarios/F3a_Phantom.cfg:579
 msgid "I have no credibility with the winged one, Dardrus was my only hope..."
 msgstr ""
 
 #. [message]: speaker=Dardrus
-#: Trinity/scenarios/F1a_Onslaught.cfg:537 Trinity/scenarios/F2a_Air.cfg:525
+#: Trinity/scenarios/F1a_Onslaught.cfg:537
 msgid ""
 "We may still survive this Khthon onslaught, but I doubt Nemesis will remain "
 "on our side now..."
@@ -3902,7 +3835,7 @@ msgid "Right.  Fall back!"
 msgstr ""
 
 #. [message]: speaker=Haldrad
-#: Trinity/scenarios/F1a_Onslaught.cfg:589 Trinity/scenarios/F2a_Air.cfg:550
+#: Trinity/scenarios/F1a_Onslaught.cfg:589
 msgid "The Khthon are scattering, they must be scared of her."
 msgstr ""
 
@@ -3916,17 +3849,18 @@ msgstr ""
 msgid "This is not written yet."
 msgstr ""
 
+#. [scenario]: id=F2a
 #: Trinity/scenarios/F2a_Air.cfg:6
 msgid "The Enemy of My Enemy"
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:27
+#: Trinity/scenarios/F2a_Air.cfg:23
 msgid "The Khthon scattered as a dark floating object filled the sky."
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:31
+#: Trinity/scenarios/F2a_Air.cfg:27
 msgid ""
 "After hovering overhead for a while, the mass moved over to a field and "
 "settled on the ground, looking like a small, out-of-place, icy mountain.  "
@@ -3934,7 +3868,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:35
+#: Trinity/scenarios/F2a_Air.cfg:31
 msgid ""
 "The inside of the mountain looked very similar to the inside of the floating "
 "island.  Nemesis explained that this island would be safe up in the sky, and "
@@ -3943,7 +3877,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:39
+#: Trinity/scenarios/F2a_Air.cfg:35
 msgid ""
 "Echidna had to be struck down if they were to ever find any peace.  The "
 "island could patrol for gatherings of Khthon (any large animal or humanoid "
@@ -3953,7 +3887,7 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:43
+#: Trinity/scenarios/F2a_Air.cfg:39
 msgid ""
 "Once Echidna and possibly her elven side-kick were destroyed, the Khthon "
 "would stop gathering and forming organized forces.  They could then be "
@@ -3962,67 +3896,63 @@ msgid ""
 msgstr ""
 
 #. [part]
-#: Trinity/scenarios/F2a_Air.cfg:47
+#: Trinity/scenarios/F2a_Air.cfg:43
 msgid ""
 "That was the plan.  It was a good plan, and they would have gotten away with "
 "it too, if it hadn't been for the growing cancer just north of Weldyn..."
 msgstr ""
 
-#. [part]
-#: Trinity/scenarios/F2a_Air.cfg:51
-msgid "Scenario is not done yet, maybe next time."
-msgstr ""
-
 #. [objective]: condition=win
-#: Trinity/scenarios/F2a_Air.cfg:63
+#: Trinity/scenarios/F2a_Air.cfg:59 Trinity/scenarios/F3a_Phantom.cfg:46
 msgid "Find and defeat Seth"
 msgstr ""
 
+#. [side]: type=Mummy Pharo, id=Amhotep
 #. [side]: type=Mummy King, id=Amhotep
-#: Trinity/scenarios/F2a_Air.cfg:197
+#: Trinity/scenarios/F2a_Air.cfg:191 Trinity/scenarios/F3a_Phantom.cfg:238
 msgid "Amhotep"
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F2a_Air.cfg:257
+#: Trinity/scenarios/F2a_Air.cfg:232
 msgid ""
 "That damned Primeval airship prevents us from moving out in the open, but if "
 "we stay in the trees and jagged terrain, we should be safe."
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F2a_Air.cfg:261
+#: Trinity/scenarios/F2a_Air.cfg:236
 msgid ""
 "We're mostly elves and animals, I don't think keeping to the trees will be a "
 "problem.  But what do we do about the bad thing from which we flee?"
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F2a_Air.cfg:265
+#: Trinity/scenarios/F2a_Air.cfg:240
 msgid ""
-"We need to get far away from here.  Keldan, do you realize what will happen "
-"if we stay!?"
+"We need to get far away from here!  Do you realize what will happen if we "
+"stay?"
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F2a_Air.cfg:269
+#: Trinity/scenarios/F2a_Air.cfg:244
 msgid "How can I know?  What will happen, from what exactly do we flee?"
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F2a_Air.cfg:273
+#: Trinity/scenarios/F2a_Air.cfg:248
 msgid ""
 "We flee one called Seth.  Seth and I came here long ago, in a different form "
 "- we were one."
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F2a_Air.cfg:277
+#: Trinity/scenarios/F2a_Air.cfg:252
 msgid "... (?)"
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F2a_Air.cfg:281
+#: Trinity/scenarios/F2a_Air.cfg:256
 msgid ""
 "If Seth catches me, and we become one again, this world is ruined.  Worse "
 "than ruined - worse even than if the Primeval Nemesis triumphed.  Not only "
@@ -4030,66 +3960,569 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F2a_Air.cfg:285
+#: Trinity/scenarios/F2a_Air.cfg:260
 msgid "We will not let that happen!  Death to Seth, and all those-"
 msgstr ""
 
 #. [message]: speaker=Echidna_a
-#: Trinity/scenarios/F2a_Air.cfg:289
-msgid "Silence!  <i>Do you see that?</i>."
+#: Trinity/scenarios/F2a_Air.cfg:264
+msgid "Silence!  <i>Do you see that?</i>"
 msgstr ""
 
 #. [message]: speaker=Keldan_a
-#: Trinity/scenarios/F2a_Air.cfg:304
-msgid "Yes!  Run!"
+#: Trinity/scenarios/F2a_Air.cfg:294
+msgid "<i>That is not really a bird, is it...</i>"
+msgstr ""
+
+#. [message]: speaker=Echidna_a
+#: Trinity/scenarios/F2a_Air.cfg:298
+msgid "Run!"
 msgstr ""
 
 #. [message]: speaker=Seth
 #: Trinity/scenarios/F2a_Air.cfg:311
-msgid "No...  You will come with me.  There is much we must...  discuss..."
+msgid "No...  You will come with me..."
 msgstr ""
 
-#: Trinity/scenarios/F2a_Air.cfg:546
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:334
+msgid "She said Seth was worse than our Nemesis."
+msgstr ""
+
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:339
+msgid "The flying mountain passes overhead!  The enemy of my enemy is ..."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Trinity/scenarios/F2a_Air.cfg:344
 msgid ""
-"A flying mountain!  Only one could be responsible for this!  She came back!"
+"Keldan waved his sword in the air, hoping it would catch enough light to "
+"make a noticeable flash."
 msgstr ""
 
-#. [unit_type]: id=Ancient Avatar, race=phantom_spirit
-#: Trinity/units/Ancient_Avatar.cfg:5
-msgid "Avatar"
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:369
+msgid "I've been spotted..."
 msgstr ""
 
-#. [unit_type]: id=Ancient Avatar, race=phantom_spirit
-#: Trinity/units/Ancient_Avatar.cfg:22
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:378
+msgid "(Don't land on me.)"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F2a_Air.cfg:426
+msgid "That is one of the enemy generals!"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F2a_Air.cfg:430
 msgid ""
-"...\n"
-"Special Note:  This unit cannot be killed."
+"(A Khthon, this is strange behaviour for one of them...)  What do you want?"
 msgstr ""
 
-#. [regenerate]: id=immortal
-#: Trinity/units/Primeval_Nemesis-Hi.cfg:45
-#: Trinity/units/Primeval_Hera_Cloak.cfg:36 Trinity/units/Primeval_Hera.cfg:36
-#: Trinity/units/Ancient_Avatar.cfg:36
-msgid "immortal"
-msgstr ""
-
-#. [regenerate]: id=immortal
-#: Trinity/units/Primeval_Nemesis-Hi.cfg:47
-#: Trinity/units/Primeval_Hera_Cloak.cfg:38 Trinity/units/Primeval_Hera.cfg:38
-#: Trinity/units/Ancient_Avatar.cfg:38
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:434
 msgid ""
-"immortal:\n"
-"This unit heals 99 HP per turn.  If poisoned, it will remove the poison."
+"Echidna has been captured by one called Seth, whom she said was a worse "
+"enemy than you.  Seth wants only void, and for this, he needs to do "
+"something to Echidna."
 msgstr ""
 
-#. [attack]: type=impact
-#: Trinity/units/Ancient_Avatar.cfg:46
-msgid "Dark Staff"
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F2a_Air.cfg:438
+msgid ""
+"I don't know the name Seth, but I do know that the Khthon are a broken "
+"fragment of a greater evil."
 msgstr ""
 
-#. [attack]: type=arcane
-#: Trinity/units/Ancient_Avatar.cfg:55
-msgid "Remorse"
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:442
+msgid "I think Seth headed south of here."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F2a_Air.cfg:446
+msgid ""
+"Towards the growing storm...  This may be Khthon treachery, or it may be the "
+"coming of the great evil.  Bresda, post your most trusted guards in the sky "
+"mountain and I will seal it so that the Khthon cannot enter.  We will follow "
+"Echidna on foot, for the skies are too turbulent to risk going by air."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F2a_Air.cfg:450
+msgid "As you command!"
+msgstr ""
+
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F2a_Air.cfg:455
+msgid "I assure you, this is not a trick."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F2a_Air.cfg:459
+msgid "You'd best keep silent..."
+msgstr ""
+
+#. [scenario]: id=F3a
+#: Trinity/scenarios/F3a_Phantom.cfg:6
+msgid "Maelstrom"
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F3a_Phantom.cfg:30
+msgid ""
+"The most trusted guards were posted inside the flying structure, to keep an "
+"eye upon the prisoners and to provide a final defense against intruders, "
+"should any get through the seal."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F3a_Phantom.cfg:34
+msgid "The rest of the group headed into the source of the dark clouds..."
+msgstr ""
+
+#. [side]: type=Mummy Pharo, id=Osirak
+#: Trinity/scenarios/F3a_Phantom.cfg:203
+msgid "Osirak"
+msgstr ""
+
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F3a_Phantom.cfg:300
+msgid "The destruction has grown since I was last here."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F3a_Phantom.cfg:304
+msgid "Are we really going to walk into that?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:308
+msgid "Yes, we must."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F3a_Phantom.cfg:312
+msgid ""
+"The dark skies obscure the sun, so although the sun rises high, it may as "
+"well be dusk."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Trinity/scenarios/F3a_Phantom.cfg:331
+msgid ""
+"Through the fog, a scream pierced the air.  It was a scream of great pain "
+"and despair, from one who was not quite human."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:336
+msgid "Echidna?"
+msgstr ""
+
+#. [message]: speaker=Keldan_a
+#: Trinity/scenarios/F3a_Phantom.cfg:356
+msgid "Something is wrong...  I - I feel a great pain..."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F3a_Phantom.cfg:367
+msgid "All of the green-eyed ones are falling..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:376
+msgid "That is a very bad sign, the evil must be progressing..."
+msgstr ""
+
+#. [message]: speaker=Osirak
+#: Trinity/scenarios/F3a_Phantom.cfg:394
+msgid "You...  cannot kill me.  You will pay for your... audacity."
+msgstr ""
+
+#. [unstore_unit]
+#: Trinity/scenarios/F3a_Phantom.cfg:422
+msgid "Empowered"
+msgstr ""
+
+#. [message]: speaker=unit
+#: Trinity/scenarios/F3a_Phantom.cfg:427
+msgid "Well, this isn't good..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:431
+msgid "I will smite that vile thing!"
+msgstr ""
+
+#. [message]: speaker=Osirak
+#: Trinity/scenarios/F3a_Phantom.cfg:446
+msgid "Welcome home..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:450
+msgid "What?"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#. [message]: speaker=unit
+#: Trinity/scenarios/F5a_Destroyer.cfg:335 Trinity/scenarios/F4a_Hera.cfg:349
+#: Trinity/scenarios/F3a_Phantom.cfg:462
+msgid "What is that?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:472
+msgid ""
+"I sense a very strong energy coming from it, but I do not know what it is..."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F3a_Phantom.cfg:476
+msgid "We should probably stay away."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F3a_Phantom.cfg:480
+msgid "I agree, we should stay away."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F3a_Phantom.cfg:488
+msgid "What if we are too late?  Can we possibly stand up to the great evil?"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F3a_Phantom.cfg:492
+msgid "Hush!  Have faith!"
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F3a_Phantom.cfg:496
+msgid "We are not too late, we would know if we were."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:500
+msgid ""
+"The boy is right, something is odd.  It's as if the great evil is holding "
+"back."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F3a_Phantom.cfg:504
+msgid "But you are a god, how can you not know what is happening?"
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F3a_Phantom.cfg:508
+msgid ""
+"Watch your tongue!  Nemesis is a god, but just like not every god can "
+"deliver the justice of the sword as she can, she cannot know all that other "
+"gods know."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:512
+msgid ""
+"I should not have to explain myself.  Others would know the ancient history "
+"better, it has not been my concern."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:516
+msgid "Believe in me, I shall not abandone my followers in this great test."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:462 Trinity/scenarios/F4a_Hera.cfg:508
+#: Trinity/scenarios/F3a_Phantom.cfg:593
+msgid ""
+"My servant has perished.  Dardrus, I must request that you transfer "
+"ownership of yours."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F5a_Destroyer.cfg:466 Trinity/scenarios/F4a_Hera.cfg:512
+#: Trinity/scenarios/F3a_Phantom.cfg:597
+msgid ""
+"Haldrad, I must turn over ownership of you to Nemesis.  I wish it were "
+"otherwise, but this is how it is."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F5a_Destroyer.cfg:470 Trinity/scenarios/F4a_Hera.cfg:516
+#: Trinity/scenarios/F3a_Phantom.cfg:601
+msgid ""
+"('Ownership'?  Whatever happens here, I fear we humans have already lost...)"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F3a_Phantom.cfg:612
+msgid "Is that it?  The storm appears to be dissipating."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F3a_Phantom.cfg:616
+msgid "Was one of those enemy leaders Seth or Echidna?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:620
+msgid ""
+"No, neither of those were Echidna.  Something is not  right, this was too "
+"easy..."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F3a_Phantom.cfg:639
+msgid "What is happening"
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F3a_Phantom.cfg:643
+msgid "Maybe, now, we are too late?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F3a_Phantom.cfg:647
+msgid "Yes, boy.  Now we are too late..."
+msgstr ""
+
+#. [scenario]: id=F4a
+#: Trinity/scenarios/F4a_Hera.cfg:6
+msgid "Hera Awakes"
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F4a_Hera.cfg:24
+msgid ""
+"Meanwhile, back in the flying structure, the prisoners felt their last "
+"chance of escape was now, while there was only a light guard."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F4a_Hera.cfg:28
+msgid ""
+"Ponce and Caldera taunted the guards, in the hopes that the guards would "
+"open the door to beat them.  One of them finally lost it and opened the door "
+"to do just that.  He regretted his brash action as Caldera, who he had not "
+"considered much of a threat, knocked his feet out from under him."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F4a_Hera.cfg:32
+msgid ""
+"Though the guards were better fighters, they were outnumbered and overcome.  "
+"The prisoners soon found they could not leave the mountain they way they had "
+"been brought in.  In their subsequent explorations, they found the Sceptre "
+"of Fire.  They also found a passageway that ended in a large stone slab, "
+"which slid aside at their approach..."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F4a_Hera.cfg:36
+msgid ""
+"Meanwhile, back on the ground, Nemesis' and Haldrad's forces were heading "
+"back to the airship from the center for the dissipating maelstrom.  They "
+"knew that what they had just gone through did not solve anything, but it was "
+"not clear what needed to be done.  Nemesis was a little shaken by the "
+"mummy's odd words, but felt that once back in the safety airship, she'd be "
+"able to put it into the past."
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F4a_Hera.cfg:40
+msgid ""
+"Unfortunately, she was not able to test that idea.  The group started "
+"trudging up the melting snow hills of the airship, but felt an ominous "
+"energy coming from the ship..."
+msgstr ""
+
+#. [objective]: condition=win
+#: Trinity/scenarios/F4a_Hera.cfg:52
+msgid "Gain entrance to the airship (move to one of the holes near top of map)"
+msgstr ""
+
+#. [objectives]
+#: Trinity/scenarios/F5a_Destroyer.cfg:50 Trinity/scenarios/F4a_Hera.cfg:66
+msgid "Do not stay in the keeps for too long."
+msgstr ""
+
+#. [side]: type=Primeval Hera, id=Hera
+#: Trinity/scenarios/F5a_Destroyer.cfg:122 Trinity/scenarios/F4a_Hera.cfg:137
+msgid "Hera"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:170 Trinity/scenarios/F4a_Hera.cfg:184
+msgid ""
+"We need to regain control of this structure, it will be very bad for you if "
+"this ship rises too high into the sky and you are still out here."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F5a_Destroyer.cfg:174 Trinity/scenarios/F4a_Hera.cfg:188
+msgid ""
+"All of the ice comes from being high in the sky, so any frosty terrain is "
+"part of the ship."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F5a_Destroyer.cfg:178 Trinity/scenarios/F4a_Hera.cfg:192
+msgid ""
+"I promise you, those guards I left behind were good men!  They cannot be "
+"doing this to us!"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:188 Trinity/scenarios/F4a_Hera.cfg:202
+msgid ""
+"No, it is not them.  If we are lucky, it is stowaways who have overpowered "
+"your guards."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F5a_Destroyer.cfg:192 Trinity/scenarios/F4a_Hera.cfg:206
+msgid "And if we are not lucky?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:196 Trinity/scenarios/F4a_Hera.cfg:210
+msgid ""
+"Dardrus!  The insolence of your human is reflecting poorly upon you, I "
+"suggest you teach him to hold his tongue."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F5a_Destroyer.cfg:200 Trinity/scenarios/F4a_Hera.cfg:214
+msgid ""
+"I'm sorry, Nemesis.  He is not fully trained in our ways, but he will learn."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:204 Trinity/scenarios/F4a_Hera.cfg:218
+msgid ""
+"Right.  Then, let us get to one of the entrances before the mountain rises "
+"too high!  You should not dally too long in the encampments."
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F5a_Destroyer.cfg:213 Trinity/scenarios/F4a_Hera.cfg:227
+msgid "I hear a strange vibration..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:217 Trinity/scenarios/F4a_Hera.cfg:231
+msgid ""
+"The ship getting ready to rise, you do not want to be on the nearby ground."
+msgstr ""
+
+#. [message]: speaker=Dardrus
+#: Trinity/scenarios/F5a_Destroyer.cfg:225 Trinity/scenarios/F4a_Hera.cfg:239
+msgid "The rumbling is getting stronger."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:245 Trinity/scenarios/F4a_Hera.cfg:259
+msgid ""
+"We're now airborn.  The air will get thin and cold, but the heat exchangers "
+"can provide some comfort."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:345 Trinity/scenarios/F4a_Hera.cfg:359
+msgid ""
+"That is a sign we are unlucky.  The goal is the same: we need to get inside!"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:354 Trinity/scenarios/F4a_Hera.cfg:368
+msgid "We are entering the clouds, our vision will be obscured."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Trinity/scenarios/F4a_Hera.cfg:410
+msgid "You cannot stay outside, you need to get to one of the entrances."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Trinity/scenarios/F5a_Destroyer.cfg:396 Trinity/scenarios/F4a_Hera.cfg:426
+msgid "Well, I've made it to an entrance.  I'll-"
+msgstr ""
+
+#. [message]: speaker=Hera
+#: Trinity/scenarios/F5a_Destroyer.cfg:408 Trinity/scenarios/F4a_Hera.cfg:438
+msgid "So...  Just what is going on, Nemesis?"
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:412 Trinity/scenarios/F4a_Hera.cfg:442
+msgid "Something came up, I had no time to awaken you.  If y-"
+msgstr ""
+
+#. [message]: speaker=Hera
+#: Trinity/scenarios/F5a_Destroyer.cfg:416 Trinity/scenarios/F4a_Hera.cfg:446
+msgid ""
+"Silence!  I'm not stupid...  You thought you could use my mountain without "
+"my permission - if I remained asleep, you had free reign.  Free reign to "
+"build an army to overthrow me and gain the loyalty of our kind for your new "
+"dynasty..."
+msgstr ""
+
+#. [message]: speaker=Hera
+#: Trinity/scenarios/F5a_Destroyer.cfg:420 Trinity/scenarios/F4a_Hera.cfg:450
+msgid ""
+"Well, you are not the first to have tried this.  I shall deal with you and "
+"your co-conspirators as I have dealt with any other would-be usurper.  And I "
+"assure you, I won't be forgiving, you will all wish you had died in battle."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: Trinity/scenarios/F4a_Hera.cfg:454
+msgid ""
+"Nemesis knew Hera meant what she said.  She had to make a decision, and she "
+"decided to flee.  She would try to free the others, but for now she needed "
+"to abandone them."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F4a_Hera.cfg:459
+msgid "I will come back for you, be strong!"
+msgstr ""
+
+#. [message]: speaker=Bresda
+#: Trinity/scenarios/F5a_Destroyer.cfg:485 Trinity/scenarios/F4a_Hera.cfg:531
+msgid "I feel light-headed..."
+msgstr ""
+
+#. [message]: speaker=Haldrad
+#: Trinity/scenarios/F5a_Destroyer.cfg:489 Trinity/scenarios/F4a_Hera.cfg:535
+msgid "I need to lay down..."
+msgstr ""
+
+#. [message]: speaker=Nemesis
+#: Trinity/scenarios/F5a_Destroyer.cfg:494 Trinity/scenarios/F4a_Hera.cfg:540
+msgid "We've risen too high, they are going to die."
+msgstr ""
+
+#. [scenario]: id=F5a
+#: Trinity/scenarios/F5a_Destroyer.cfg:6
+msgid "Destroyer"
+msgstr ""
+
+#. [part]
+#: Trinity/scenarios/F5a_Destroyer.cfg:24
+msgid "This is not done yet - this scenario is a place-holder."
+msgstr ""
+
+#. [objective]: condition=win
+#: Trinity/scenarios/F5a_Destroyer.cfg:36
+msgid "Regain control of the airship"
 msgstr ""
 
 #. [unit_type]: id=Battle Queen, race=human
@@ -4151,7 +4584,7 @@ msgstr ""
 #. [attack]: type=blade
 #: Trinity/units/Primeval_Nemesis-Hi.cfg:55
 #: Trinity/units/Primeval_Nemesis-Mid.cfg:42
-#: Trinity/units/Primeval_Hera.cfg:46 Trinity/units/Echidna-Low.cfg:29
+#: Trinity/units/Primeval_Hera.cfg:46 Trinity/units/Echidna-Low.cfg:31
 #: Trinity/units/Primeval_Nemesis-Low.cfg:42 Trinity/units/Bresda.cfg:289
 msgid "Sword"
 msgstr ""
@@ -4167,17 +4600,32 @@ msgid "Rocket Mortar"
 msgstr ""
 
 #. [attack]: type=fire
-#: Trinity/units/Cannon.cfg:26
+#: Trinity/units/Cannon.cfg:45
 msgid "Torch"
 msgstr ""
 
+#. [unit_type]: id=Primeval Chariot, race=primeval
+#: Trinity/units/Chariot.cfg:4
+msgid "Chariot"
+msgstr ""
+
 #. [attack]: type=fire
-#: Trinity/units/Echidna-Mid.cfg:39 Trinity/units/Echidna-Low.cfg:41
+#: Trinity/units/Chariot.cfg:57
+msgid "ram"
+msgstr ""
+
+#. [attack]: type=arcane
+#: Trinity/units/Chariot.cfg:66
+msgid "missile"
+msgstr ""
+
+#. [attack]: type=fire
+#: Trinity/units/Echidna-Mid.cfg:40 Trinity/units/Echidna-Low.cfg:43
 msgid "Fire"
 msgstr ""
 
 #. [attack]: type=impact
-#: Trinity/units/Echidna-Mid.cfg:27 Trinity/units/Echidna.cfg:49
+#: Trinity/units/Echidna-Mid.cfg:28 Trinity/units/Echidna.cfg:49
 msgid "Fist"
 msgstr ""
 
@@ -4301,9 +4749,8 @@ msgstr ""
 msgid "Seadog"
 msgstr ""
 
-#. [unit_type]: id=Primeval Hera_Cloak, race=primeval
 #. [unit_type]: id=Primeval Hera, race=primeval
-#: Trinity/units/Primeval_Hera_Cloak.cfg:5 Trinity/units/Primeval_Hera.cfg:5
+#: Trinity/units/Primeval_Hera.cfg:5
 msgid "Pantheon Queen"
 msgstr ""
 
@@ -4314,26 +4761,25 @@ msgid ""
 "Special Note:  This unit cannot be killed."
 msgstr ""
 
+#. [regenerate]: id=immortal
+#: Trinity/units/Primeval_Nemesis-Hi.cfg:45 Trinity/units/Primeval_Hera.cfg:36
+msgid "immortal"
+msgstr ""
+
+#. [regenerate]: id=immortal
+#: Trinity/units/Primeval_Nemesis-Hi.cfg:47 Trinity/units/Primeval_Hera.cfg:38
+msgid ""
+"immortal:\n"
+"This unit heals 99 HP per turn.  If poisoned, it will remove the poison."
+msgstr ""
+
 #. [attack]: type=cold
 #. [attack]: type=arcane
 #: Trinity/units/Primeval_Nemesis-Hi.cfg:64
 #: Trinity/units/Primeval_Nemesis-Mid.cfg:51
-#: Trinity/units/Primeval_Hera_Cloak.cfg:60 Trinity/units/Primeval_Hera.cfg:58
+#: Trinity/units/Primeval_Hera.cfg:58
 #: Trinity/units/Primeval_Nemesis-Low.cfg:51
 msgid "Glare"
-msgstr ""
-
-#. [unit_type]: id=Primeval Hera_Cloak, race=primeval
-#: Trinity/units/Primeval_Hera_Cloak.cfg:22
-msgid ""
-"Hera is the surviving ruler of the Primevals. When she wears her Cloak of "
-"Clouds, none should attack her. Not even heroes with special weapons.\n"
-"Special Note:  This unit cannot be killed."
-msgstr ""
-
-#. [attack]: type=blade
-#: Trinity/units/Primeval_Hera_Cloak.cfg:46
-msgid "touch"
 msgstr ""
 
 #. [unit_type]: id=Primeval Nemesis-hi, race=primeval
@@ -4435,52 +4881,37 @@ msgstr ""
 msgid "Industrial Facility"
 msgstr ""
 
-#. [terrain_type]: id=evil1
-#: Trinity/utils/terrain.cfg:19
-msgid "Evil Village"
+#. [terrain_type]: id=vent1
+#: Trinity/utils/terrain.cfg:21
+msgid "Heat Exchanger"
 msgstr ""
 
 #. [terrain_type]: id=ship1
-#: Trinity/utils/terrain.cfg:32
+#: Trinity/utils/terrain.cfg:34
 msgid "Primeval Ship"
 msgstr ""
 
 #. [terrain_type]: id=ship2
-#: Trinity/utils/terrain.cfg:45
+#: Trinity/utils/terrain.cfg:47
 msgid "Human Ship"
 msgstr ""
 
 #. [terrain_type]: id=engine_tri
-#: Trinity/utils/terrain.cfg:58
+#: Trinity/utils/terrain.cfg:60
 msgid "Engine"
 msgstr ""
 
 #. [terrain_type]: id=tri_stars
-#: Trinity/utils/terrain.cfg:71
+#: Trinity/utils/terrain.cfg:73
 msgid "Stars"
 msgstr ""
 
-#. [terrain_type]: id=sand_castle
-#: Trinity/utils/terrain.cfg:121
-msgid "Sand Castle"
+#. [terrain_type]: id=tri_blue
+#: Trinity/utils/terrain.cfg:86
+msgid "Blue"
 msgstr ""
 
-#. [terrain_type]: id=sand_keep
-#: Trinity/utils/terrain.cfg:132
-msgid "Sand Keep"
-msgstr ""
-
-#. [terrain_type]: id=sand_keep
-#: Trinity/utils/terrain.cfg:133
-msgid "Castle Keep"
-msgstr ""
-
-#. [terrain_type]: id=evil_castle
-#: Trinity/utils/terrain.cfg:145
-msgid "Evil Castle"
-msgstr ""
-
-#. [terrain_type]: id=evil_keep
-#: Trinity/utils/terrain.cfg:156 Trinity/utils/terrain.cfg:157
-msgid "Evil Keep"
+#. [terrain_type]: id=tri_path
+#: Trinity/utils/terrain.cfg:97
+msgid "Snow Path"
 msgstr ""
