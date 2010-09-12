@@ -1,1 +1,2 @@
 find . -name '*.cfg' -print
+find . -name '*.lua' -print
