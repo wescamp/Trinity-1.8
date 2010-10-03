@@ -1,0 +1,43 @@
+# There is nothing translated here...
+#textdomain wesnoth-Trinity
+
+# There has to be a way to make this centralized here...
+# but not yet.
+
+#define TRINITY_AI_UNIT_GOAL SIDE ID LOCATION
+
+   [ai]
+       {MODIFY_AI_ADD_CANDIDATE_ACTION {SIDE} main_loop (
+         [candidate_action]
+             id=push_to_destination
+             engine=fai
+             name=push_to_destination
+             type=movement
+             evaluation="if(me.id='{ID}',{AI_CA_COMBAT_SCORE}+10,0)"
+             action="move(me.loc,choose(unit_moves(me.loc),'mloc',-sum(map(simplest_path(mloc,{LOCATION},me.loc),'path_location', movement_cost( me, path_location ) ))) )"
+         [/candidate_action]
+       )}
+   [/ai]
+
+#enddef
+#define TRINITY_AI_ SIDE ID LOCATION
+
+   [ai]
+       {MODIFY_AI_ADD_CANDIDATE_ACTION {SIDE} main_loop (
+         [candidate_action]
+             id=push_to_destination
+             engine=fai
+             name=push_to_destination
+             type=movement
+             evaluation="if(me.id='{ID}',{AI_CA_COMBAT_SCORE}+10,0)"
+             action="move(me.loc,choose(unit_moves(me.loc),'mloc',-sum(map(simplest_path(mloc,{LOCATION},me.loc),'path_location', movement_cost( me, path_location ) ))) )"
+         [/candidate_action]
+       )}
+   [/ai]
+
+#enddef
+
+#define TRINITY_AI_UNIT_
+
+
+#enddef
